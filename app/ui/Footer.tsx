@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-col">
           <Link href="/">
             <Image
-              src="/Roofers_Logo.png"
+              src="/Roofers_Logo.PNG"
               width={120}
               height={100}
               alt="Logo"
