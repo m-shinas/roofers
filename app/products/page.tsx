@@ -1,5 +1,4 @@
-import { mulish } from "@/app/ui/fonts";
-import Link from "next/link";
+
 import Banner from "../ui/Banner";
 
 export default function page() {

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { mulish } from "./fonts";
-import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -13,7 +12,6 @@ import {
 
 const Footer = () => {
   const presentYear: number = new Date().getFullYear();
-  const pathname = usePathname();
   return (
     <footer className="w-full bg-gradient-to-r from-gray-700 to-gray-900 text-white rounded-t-[60px] pt-[100px] pb-[30px]">
       <div className="w-[85%] m-auto flex flex-wrap items-start justify-between ">
