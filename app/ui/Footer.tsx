@@ -28,7 +28,7 @@ const Footer = () => {
             Exotic Roofing Solution From Europe
           </p>
           <p className={`italic text-base text-tall-poppy-700`}>
-            "Celebrating 25 years of excellence"
+            &quot; Celebrating 25 years of excellence &quot;
           </p>
         </div>
         <div className="footer-col">
