@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color-scheme: light only;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@supports (forced-colors: none) {
+  * {
+    forced-colors: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --color-tall-poppy-50: #fef2f2;
+  --color-tall-poppy-100: #fde3e4;
+  --color-tall-poppy-200: #fdcbcc;
+  --color-tall-poppy-300: #faa7a9;
+  --color-tall-poppy-400: #f47578;
+  --color-tall-poppy-500: #ea494d;
+  --color-tall-poppy-600: #d72b30;
+  --color-tall-poppy-700: #b32024;
+  --color-tall-poppy-800: #961e21;
+  --color-tall-poppy-900: #7c2023;
+  --color-tall-poppy-950: #430c0d;
+
+  --color-regent-gray-50: #f8f9fa;
+  --color-regent-gray-100: #f2f4f5;
+  --color-regent-gray-200: #e8ebec;
+  --color-regent-gray-300: #d5dbdd;
+  --color-regent-gray-400: #bdc4c8;
+  --color-regent-gray-500: #a1abb1;
+  --color-regent-gray-600: #838e96;
+  --color-regent-gray-700: #788189;
+  --color-regent-gray-800: #646c73;
+  --color-regent-gray-900: #53595f;
+  --color-regent-gray-950: #363c3f;
+
+  --color-davys-gray: #484848ff;
+  --color-rose-ebony: #594142ff;
 }
+
+@layer components {
+  .footer-col {
+    @apply basis-[100%] sm:basis-[25%] p-2.5;
+  }
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/* Color palette 
+--fire-brick: #b32024ff;
+--slate-gray: #838e96ff;
+--davys-gray: #484848ff;
+--white: #ffffffff;
+--rose-ebony: #594142ff;
+*/
