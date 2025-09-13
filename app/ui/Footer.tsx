@@ -27,9 +27,9 @@ const Footer = () => {
           <p className={`${mulish.className} text-base mt-4`}>
             Exotic Roofing Solution From Europe
           </p>
-          <p className={`italic text-base text-tall-poppy-700`}>
-            &quot; Celebrating 25 years of excellence &quot;
-          </p>
+          {/* <p className={`italic text-base text-tall-poppy-700`}>
+            &quot;Celebrating 25 years of excellence&quot;
+          </p> */}
         </div>
         <div className="footer-col">
           <h3 className="w-fit mb-8 relative text-2xl leading-normal font-medium ">
@@ -69,14 +69,6 @@ const Footer = () => {
                 className={`${mulish.className} text-regent-gray-600 hover:text-tall-poppy-700`}
               >
                 About Us
-              </Link>
-            </li>
-            <li className="my-3">
-              <Link
-                href="/products"
-                className={`${mulish.className} text-regent-gray-600 hover:text-tall-poppy-700`}
-              >
-                Products
               </Link>
             </li>
             <li className="my-3">

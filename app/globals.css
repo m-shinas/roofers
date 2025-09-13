@@ -47,6 +47,17 @@
   }
 }
 
+@layer utilities {
+  
+  .padding {
+    @apply sm:px-16 px-4 sm:py-16 py-8;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+}
+
 .no-select {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */

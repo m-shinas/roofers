@@ -7,6 +7,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { mulish } from "../ui/fonts";
 import Banner from "../ui/Banner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact us",
+  description: "Our head office address- P. O. Box: 89515 Dubai, United Arab Emirates. Contact Us on +971 4 458 0127, Email us at info@roofersfzc.com",
+  keywords: ["Contact", "United Arab Emirates", "Head Office", "Phone", "Email", "Address", "Map", "Location"],
+  alternates: {
+    canonical: "/contact",
+  }
+};
 
 export default function page() {
   return (
