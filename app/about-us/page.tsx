@@ -76,7 +76,7 @@ export default function page() {
       {/* Mission / Vision / Services Section */}
       <section className="relative w-full h-[85vh] bg-[url('/roof-bg.JPG')] bg-no-repeat bg-cover bg-bottom flex justify-center items-center mb-20">
         <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/30 to-white/10"></div>
-        <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-3 absolute bottom-[-80] z-10">
+        <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-3 absolute md:bottom-[-80] z-10">
           {/* Card 1 */}
           <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-4 sm:p-8 shadow-lg flex ">
             <div className="mr-4">
@@ -93,10 +93,10 @@ export default function page() {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-4">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4">
                 Our Mission
               </h3>
-              <p className="text-sm sm:text-base">
+              <p className="text-base sm:text-lg">
                 Building with precision and passion — delivering durable,
                 high-quality roofing and metal solutions on time.
               </p>
@@ -117,10 +117,10 @@ export default function page() {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-4">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4">
                 Our Vision
               </h3>
-              <p className="text-sm sm:text-base">
+              <p className="text-base sm:text-lg">
                 To shape skylines with innovation, craftsmanship, and lasting
                 value for generations to come.
               </p>
@@ -141,10 +141,10 @@ export default function page() {
               </svg>
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-4">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4">
                 Core Values
               </h3>
-              <p className="text-sm sm:text-base">
+              <p className="text-base sm:text-lg">
                 Guided by integrity, driven by innovation, committed to quality,
                 safety, and on-time delivery.
               </p>
