@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Roofers",
+  "short_name": "Roofers",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

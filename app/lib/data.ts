@@ -14,7 +14,7 @@ export const leaders = [
         email: "mathew@roofersfzc.com",
     },
     {
-        imgURL: "/Abdul_Salim.avif",
+        imgURL: "/Abdul_Salim.jpg",
         name: "Abdul Salim",
         title: "Operation Director",
         mob: "+971 55 159 4244",

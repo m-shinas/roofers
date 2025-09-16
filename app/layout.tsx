@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { montserrat } from "./ui/fonts";
 import "./globals.css";
-import Nav from "./ui/Nav";
+import Nav from "./ui/Navbar";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Footer from "./ui/Footer";
+import ScrollToTop from "./ui/scrollToTop";
 
 config.autoAddCss = false
 
@@ -49,6 +50,7 @@ export default function RootLayout({
       >
         <Nav />
         {children}
+        <ScrollToTop />
         <Footer />
       </body>
     </html>

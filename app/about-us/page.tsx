@@ -30,26 +30,37 @@ export default function page() {
       <Banner />
       <section className="padding flex justify-between items-center max-lg:flex-col gap-10 w-full">
         <div className="flex flex-1 flex-col">
-          <h2 className="text-5xl text-regent-gray-950 capitalize font-bold lg:max-w-lg">
+          <h2 className="text-5xl text-tall-poppy-700 capitalize font-semibold lg:max-w-lg">
             Our Story
           </h2>
           <p className={`${mulish.className} mt-4 lg:max-w-lg text-lg`}>
-            Roofers Group of Companies is a leading, multi-disciplinary
-            enterprise in the UAE construction market with over 24 years of
-            proven excellence. We specialise in Roof Tiles and high-quality
-            Steel, Aluminium, and Stainless-Steel Fabrication, Erection, and
-            Civil Contracting. With fully equipped workshops and highly skilled
-            teams based in Dubai, Abu Dhabi and Ajman we provide complete
-            structural and finishing solutions for commercial, industrial, and
-            high-end residential projects.
+            For more than two decades, Roofers Group of Companies has built a
+            strong reputation as a trusted name in the UAE construction
+            industry. With over 24 years of experience, we have grown into a
+            multi-disciplinary enterprise, bringing expertise, reliability, and
+            quality to every project we undertake.
           </p>
-          <p className={`${mulish.className} mt-6 lg:max-w-lg text-lg`}>
-            In addition to our contracting capabilities, Roofers Group extends
-            its global presence through the manufacture and supply of
-            premium-quality products from our partner factories in Italy, Spain,
-            China, Brazil, and the USA. We operate on a direct selling model,
-            enabling cost-effective procurement without compromising on quality.
+          <p className={`${mulish.className} mt-4 lg:max-w-lg text-lg`}>
+            Our core strengths lie in Roof Tiles, as well as Steel, Aluminium,
+            and Stainless-Steel Fabrication and Erection, supported by a wide
+            range of Civil Contracting services. Backed by fully equipped
+            workshops and skilled teams in Dubai, Abu Dhabi, and Ajman, we
+            deliver complete structural and finishing solutions for commercial,
+            industrial, and high-end residential projects.
           </p>
+          <p className={`${mulish.className} mt-4 lg:max-w-lg text-lg`}>
+          Beyond contracting, Roofers Group also connects the UAE market with
+          the world. Through our partner factories in Italy, Spain, China,
+          Brazil, and the USA, we manufacture and supply premium-quality
+          products, ensuring our clients benefit from international standards at
+          competitive value. Our direct selling model keeps procurement
+          efficient and cost-effective, while never compromising on quality.
+        </p>
+        <p className={`${mulish.className} mt-4 lg:max-w-lg text-lg`}>
+            From concept to completion, our journey has always been guided by a
+            commitment to excellence, innovation, and customer trust — values that
+            continue to shape everything we do. 
+        </p>
         </div>
         <div className="flex-1 flex justify-center items-center">
           <Image
@@ -63,11 +74,11 @@ export default function page() {
       </section>
 
       {/* Mission / Vision / Services Section */}
-      <section className="relative w-full h-[85vh] bg-[url('/roof-bg.JPG')] bg-no-repeat bg-cover bg-bottom flex flex-col justify-center items-center mb-20">
+      <section className="relative w-full h-[85vh] bg-[url('/roof-bg.JPG')] bg-no-repeat bg-cover bg-bottom flex justify-center items-center mb-20">
         <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/30 to-white/10"></div>
         <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-3 absolute bottom-[-80] z-10">
           {/* Card 1 */}
-          <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-8 shadow-lg flex ">
+          <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-4 sm:p-8 shadow-lg flex ">
             <div className="mr-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +93,10 @@ export default function page() {
               </svg>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-              <p className="text-base">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4">
+                Our Mission
+              </h3>
+              <p className="text-sm sm:text-base">
                 Building with precision and passion — delivering durable,
                 high-quality roofing and metal solutions on time.
               </p>
@@ -91,7 +104,7 @@ export default function page() {
           </div>
 
           {/* Card 2 */}
-          <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-8 shadow-xl flex ">
+          <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-4 sm:p-8 shadow-xl flex ">
             <div className="mr-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,8 +117,10 @@ export default function page() {
               </svg>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Our Vision</h3>
-              <p className="text-base">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4">
+                Our Vision
+              </h3>
+              <p className="text-sm sm:text-base">
                 To shape skylines with innovation, craftsmanship, and lasting
                 value for generations to come.
               </p>
@@ -113,7 +128,7 @@ export default function page() {
           </div>
 
           {/* Card 3 */}
-          <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-8 shadow-xl flex ">
+          <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-4 sm:p-8 shadow-xl flex ">
             <div className="mr-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -126,8 +141,10 @@ export default function page() {
               </svg>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Core Values</h3>
-              <p className="text-base">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4">
+                Core Values
+              </h3>
+              <p className="text-sm sm:text-base">
                 Guided by integrity, driven by innovation, committed to quality,
                 safety, and on-time delivery.
               </p>

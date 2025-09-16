@@ -23,7 +23,7 @@ export default function page() {
     <main className="">
       <Banner />
 
-      <section className="relative w-full py-10 px-25">
+      <section className="relative w-full py-10 px-25 max-md:p-5">
         <h2 className="text-black text-2xl sm:text-4xl font-medium text-center">
           Get in Touch
         </h2>
@@ -31,12 +31,13 @@ export default function page() {
           For business enquiries, project discussions, or to learn more about
           our services, Feel free to contact us.
         </p>
-        <div className="relative grid grid-cols-[2fr_1fr] grid-rows-[1fr_1fr] gap-5 my-5">
-          <div className="p-10 border text-regent-gray-950 border-regent-gray-400 row-start-1 row-end-3 rounded-2xl shadow-md">
+       
+        <div className="relative grid max-md:grid-cols-1 max-md:grid-rows-[3auto] grid-cols-[2fr_1fr] grid-rows-[1fr_1fr] gap-5 my-5">
+          <div className="p-10 max-md:p-7.5 border text-regent-gray-950 border-regent-gray-400 row-start-1 row-end-3 rounded-2xl shadow-md">
             <h3 className="mb-5 text-2xl font-bold">Drop Your Message</h3>
             <form>
               <div className={`${mulish.className} formBox relative w-full`}>
-                <div className="row50 flex gap-5">
+                <div className="row50 max-md:flex-col max-md:gap-0 flex gap-5">
                   <div className="inputBox flex flex-col w-full mb-2.5">
                     <span className="mt-2.5 mb-1 font-medium">Name</span>
                     <input
@@ -47,8 +48,8 @@ export default function page() {
                   </div>
                 </div>
 
-                <div className="row50 flex gap-5">
-                  <div className="inputBox flex flex-col w-[50%] mb-2.5">
+                <div className="row50 max-md:flex-col max-md:gap-0 flex gap-5">
+                  <div className="inputBox flex flex-col w-[50%] max-md:w-full mb-2.5">
                     <span className="mt-2.5 mb-1 font-medium">Email</span>
                     <input
                       type="email"
@@ -56,7 +57,7 @@ export default function page() {
                       placeholder="Enter your email address"
                     />
                   </div>
-                  <div className="inputBox flex flex-col w-[50%] mb-2.5">
+                  <div className="inputBox flex flex-col w-[50%] max-md:w-full mb-2.5">
                     <span className="mt-2.5 mb-1 font-medium">Mobile</span>
                     <input
                       type="text"
@@ -89,7 +90,7 @@ export default function page() {
             </form>
           </div>
 
-          <div className="p-10 bg-regent-gray-300 text-regent-gray-950 rounded-2xl shadow-md">
+          <div className="p-10 max-md:p-7.5  bg-regent-gray-300 text-regent-gray-950 rounded-2xl shadow-md">
             <h3 className="mb-5 text-2xl font-bold">
               Roofers Technical Service LLC (Headquarters)
             </h3>
@@ -120,7 +121,7 @@ export default function page() {
             </div>
           </div>
 
-          <div className="border border-regent-gray-400 rounded-2xl shadow-md">
+          <div className="border border-regent-gray-400 rounded-2xl shadow-md max-md:min-h-75">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3611.057288803115!2d55.39583587538083!3d25.167543377729974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDEwJzAzLjIiTiA1NcKwMjMnNTQuMyJF!5e0!3m2!1sen!2sin!4v1756650414539!5m2!1sen!2sin"
               width="100%"
@@ -134,15 +135,15 @@ export default function page() {
         </div>
       </section>
 
-      <section className="relative w-full pb-10 px-25 text-center">
+      <section className="relative w-full pb-10 px-25 max-md:p-5 text-center">
         <span className="text-2xl sm:text-4xl font-medium px-1 relative top-4 bg-white rounded-lg">
           Other Locations
         </span>
         <div
-          className={`text-left flex gap-4 max-lg:flex-col justify-around items-center mx-0 py-8 px-8 border border-regent-gray-400 rounded-2xl shadow-md`}
+          className={`text-left grid max-md:grid-cols-1 max-md:grid-rows-3 grid-cols-3 gap-5 mx-0 py-8 px-8 max-md:px-4 border border-regent-gray-400 rounded-2xl shadow-md`}
         >
-          <div>
-            <div className="flex-1 w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
+          
+            <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
               <h3 className="mt-3 text-xl leading-normal font-bold">
                 Roofers Steel And Aluminium L.L.C
               </h3>
@@ -153,9 +154,8 @@ export default function page() {
                 Tel: +971 2 236 7617
               </p>
             </div>
-          </div>
 
-            <div className="flex-1 w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
+            <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
               <h3 className="mt-3 text-xl leading-normal font-bold">
                 Roofers Aluminium And Steel Company
               </h3>
@@ -167,7 +167,7 @@ export default function page() {
               </p>
             </div>
 
-            <div className="flex-1 w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
+            <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
               <h3 className="mt-3 text-xl leading-normal font-bold">
                 Roofers International
               </h3>
