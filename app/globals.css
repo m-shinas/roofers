@@ -45,7 +45,13 @@
   .footer-col {
     @apply basis-[100%] sm:basis-[25%] p-2.5;
   }
+
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
+  
 
 @layer utilities {
   
