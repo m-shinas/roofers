@@ -6,11 +6,6 @@
   color-scheme: light only;
 }
 
-@supports (forced-colors: none) {
-  * {
-    forced-colors: none;
-  }
-}
 
 @theme {
   --color-tall-poppy-50: #fef2f2;

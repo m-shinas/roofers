@@ -153,7 +153,8 @@ export default function page() {
         </div>
       </section>
 
-      <section className="my-8 padding-x py-10 w-full">
+      <section className="md:my-8 my-4 padding-x py-10 w-full">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#961e21_100%)]"></div>
         <h2 className="text-center text-4xl sm:text-5xl font-bold">
           Our Leaders
         </h2>

@@ -15,7 +15,7 @@ export default function Home() {
   // const [heroCount, setHeroCount] = useState(0);
   const [counterOn, setCounterOn] = useState(false);
   const scrollPosition = () => {
-    if (window.scrollY >= 720) {
+    if (window.scrollY >= 780) {
       setCounterOn(true);
     } else {
       setCounterOn(false);
@@ -130,7 +130,7 @@ export default function Home() {
                 {counterOn && (
                   <CountUp
                     end={8}
-                    duration={3}
+                    duration={5}
                     separator=","
                     start={0}
                     delay={0}

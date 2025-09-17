@@ -24,17 +24,17 @@ const ProfileCard = ({
     //   </div>
     //   <h1>{name}</h1>
     // </div>
-    <div className=" sm:w-[300px] sm:min-w-[300px] w-[300px] h-[380px] relative group outline-1 outline-regent-gray-400 ">
-      <div className="overflow-hidden sm:w-[300px] sm:min-w-[300px] w-[300px] h-[380px] ">
+    <div className=" sm:w-[300px] sm:min-w-[300px] max-w-[300px] max-h-[380px] relative group rounded-xl ">
+      <div className="overflow-hidden sm:w-[300px] sm:min-w-[300px] max-w-[300px] max-h-[380px] rounded-xl">
         <Image
           src={imgURL}
           alt={title}
           width={300}
           height={380}
-          className="w-full h-full object-fill transition duration-500 ease-in-out group-hover:scale-110"
+          className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
         />
       </div>
-      <div className="absolute flex flex-col justify-between items-center w-[80%] px-4 py-2 bottom-[-35] shadow-md bg-white mx-7 rounded-[15px] ">
+      <div className="absolute bottom-[-3] w-full flex flex-col justify-between items-center px-4 py-2 shadow-md bg-white group-hover:[background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#961e21_100%)] rounded-[15px] transition-colors duration-500 ease-in-out ">
         <h2
           className={`  text-regent-gray-950 text-xl leading-snug font-semibold`}
         >
