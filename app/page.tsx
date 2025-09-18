@@ -27,7 +27,7 @@ const settings = {
   arrows: false,
   responsive: [
     {
-      breakpoint: 820,
+      breakpoint: 640,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
