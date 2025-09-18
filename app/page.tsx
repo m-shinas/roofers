@@ -14,6 +14,7 @@ import { testimonials } from "./lib/data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { faDownload, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 const settings = {
   dots: false,
@@ -26,22 +27,14 @@ const settings = {
   arrows: false,
   responsive: [
     {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        
-      },
-    },
-    {
       breakpoint: 820,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
-  ]
-}
+  ],
+};
 
 export default function Home() {
   // const [heroCount, setHeroCount] = useState(0);
@@ -245,6 +238,101 @@ export default function Home() {
                 <TestimonyCard key={testimony.name} {...testimony} />
               ))}
             </Slider>
+          </div>
+        </div>
+      </section>
+      <section className="padding">
+        <div className="flex items-center justify-between flex-wrap">
+          <div className="flex flex-col items-center justify-center max-w-2xl">
+            <h2 className="text-3xl md:text-5xl font-bold">
+              Explore Our
+              <span className="text-tall-poppy-700"> Clay Roofing </span>
+              Products
+            </h2>
+            <p className="mt-3 text-slate-600  ">
+              We manufacture and supply premium-quality products through our
+              partner factories in Italy, Spain, China, Brazil, and the USA. We
+              operate on a direct selling model, enabling cost-effective
+              procurement without compromising on quality.
+            </p>
+          </div>
+          <div className="my-8 flex justify-center flex-wrap gap-12">
+            <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
+              <div>
+                <Image
+                  src="/LaEscandella-2025.png"
+                  alt="La Escandella"
+                  width={200}
+                  height={216}
+                  className="mb-2 max-w-[200px] max-h-[216px] object-cover rounded-xl"
+                />
+                <code
+                  className={`text-xs bg-slate-200 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
+                >
+                  Made in Spain
+                </code>
+              </div>
+
+              <div className="mt-4 flex gap-2 justify-end">
+                <Link
+                  href="https://drive.google.com/file/d/1qzQkCSztrk-2xv-aB2cvys14L32b7vZq/view"
+                  target="_blank"
+                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
+                >
+                  View{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faFilePdf} />
+                  </span>
+                </Link>
+                <Link
+                  href="https://drive.usercontent.google.com/u/0/uc?id=1qzQkCSztrk-2xv-aB2cvys14L32b7vZq&export=download"
+                  target="_blank"
+                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
+                >
+                  <span>
+                    <FontAwesomeIcon icon={faDownload} />
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
+              <div>
+                <Image
+                  src="/ICP_Cat_tile.png"
+                  alt="ICP Cat Tile"
+                  width={200}
+                  height={216}
+                  className="mb-2 max-w-[200px] max-h-[180px] object-cover rounded-xl"
+                />
+                <code
+                  className={`text-xs bg-slate-200 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
+                >
+                  Made in Italy
+                </code>
+              </div>
+
+              <div className="mt-4 flex gap-2 justify-end">
+                <Link
+                  href="https://drive.google.com/file/d/1Z3ob5bKjZLY-U6pr9zJUKpIh3Xhdfsdt/view"
+                  target="_blank"
+                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
+                >
+                  View{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faFilePdf} />
+                  </span>
+                </Link>
+                <Link
+                  href="https://drive.usercontent.google.com/u/0/uc?id=1Z3ob5bKjZLY-U6pr9zJUKpIh3Xhdfsdt&export=download"
+                  target="_blank"
+                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
+                >
+                  <span>
+                    <FontAwesomeIcon icon={faDownload} />
+                  </span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
