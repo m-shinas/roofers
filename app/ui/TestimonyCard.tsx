@@ -12,7 +12,7 @@ const TestimonyCard = ({
   wordings: string;
 }) => {
   return (
-    <div className="md:mx-8 lg:px-6 px-4 py-8 lg:py-16 rounded-2xl bg-white min-w-xl">
+    <div className="mx-4 md:mx-8 lg:px-6 px-4 py-8 lg:py-16 rounded-2xl bg-white">
       <div className="mb-4 flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <Image
