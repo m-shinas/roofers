@@ -39,7 +39,7 @@ export const testimonials = [
         imgURL: "/ravi_menon.jpg",
         name: "Ravi Menon",
         title: "Project Manager",
-        wordings: "Their aluminium façade work gave our building a premium finish. Great craftsmanship and detailing.",
+        wordings: "Their aluminium facade work gave our building a premium finish. Great craftsmanship and detailing.",
         
     },
     {
