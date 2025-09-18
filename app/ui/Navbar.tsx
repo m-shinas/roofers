@@ -1,27 +1,54 @@
-import Image from "next/image"
-import Link from "next/link"
-import { mulish } from "./fonts"
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { mulish } from "./fonts";
+import { useEffect, useState } from "react";
 
 function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 650) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
+
   return (
-    <header className="w-full fixed drop-shadow-2xl z-50">
-        <div className="flex w-full h-[100px] ">
-            <div className="mx-auto flex items-center justify-between px-4 bg-white rounded-b-xl shadow">
-                <Link href='/' className=''>
-                    <Image src="/Roofers_Logo.PNG" alt="logo" width={150} height={150} />
-                </Link>
-                <nav className={`${mulish.className}`}>
-                    <Link href='/' className="px-3 py-2 mx-2"> Home </Link>
-                    <Link href='/about-us' className="px-3 py-2 mx-2">About Us</Link>
-                    <Link href='/services' className="px-3 py-2 mx-2">Services</Link>
-                    <Link href='/projects' className="px-3 py-2 mx-2">Projects</Link>
-                    <Link href='/contact' className="px-3 py-2 mx-2">Contact Us</Link>
-                </nav>
-                
-            </div>
-        </div>
+    <header className="w-full fixed z-50">
+      <div className={`w-[95%] flex items-center justify-between px-12 py-6 my-0 mx-auto bg-white rounded-b-2xl shadow-lg transition duration-500 ease-in-out ${ navbar && "bg-gradient-to-r from-gray-700 to-gray-900 text-white"}`}>
+        <Link href="/" className="">
+          <Image src="/Roofers_Logo.PNG" alt="logo" width={150} height={150} />
+        </Link>
+        <nav className={`${mulish.className}`}>
+          <ul className="flex gap-8 m-0 p-0 list-none ">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about-us">About Us</Link>
+            </li>
+            <li>
+              <Link href="/services">Services</Link>
+            </li>
+            <li>
+              <Link href="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact Us</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

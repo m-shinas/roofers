@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { montserrat } from "./ui/fonts";
 import "./globals.css";
-import Nav from "./ui/Navbar";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Footer from "./ui/Footer";
 import ScrollToTop from "./ui/scrollToTop";
+import Navbar from "./ui/Navbar";
 
 config.autoAddCss = false
 
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  description: "We are Roofers.",
-  keywords: [],
+  description: "We are Roofers, a leading multi-disciplinary enterprise in the UAE construction market with over 24 years of proven excellence. We specialise in Roof Tiles and high-quality Steel, Aluminium, and Stainless-Steel Fabrication, Erection, and Civil Contracting.",
+  keywords: ["Roofers", "construction", "roof tiles", "steel", "aluminium", "roofing", "stainless steel", "civil contracting", "erection"],
   alternates: {
     canonical: '/',
     languages: {
@@ -48,7 +48,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} antialiased relative`}
       >
-        <Nav />
+        <Navbar />
         {children}
         <ScrollToTop />
         <Footer />

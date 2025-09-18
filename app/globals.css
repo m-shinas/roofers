@@ -6,7 +6,6 @@
   color-scheme: light only;
 }
 
-
 @theme {
   --color-tall-poppy-50: #fef2f2;
   --color-tall-poppy-100: #fde3e4;
@@ -34,6 +33,17 @@
 
   --color-davys-gray: #484848ff;
   --color-rose-ebony: #594142ff;
+
+  --animate-loop-scroll: loop-scroll 60s linear infinite;
+
+  @keyframes loop-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @layer components {
@@ -46,10 +56,8 @@
     margin: 0 auto;
   }
 }
-  
 
 @layer utilities {
-  
   .padding {
     @apply sm:px-16 px-4 sm:py-16 py-8;
   }

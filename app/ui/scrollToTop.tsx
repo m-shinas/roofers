@@ -2,7 +2,7 @@
 
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ScrollToTop = () => {
     const [scrollToTopBtn, setScrollToTopBtn] = useState(false)
@@ -14,10 +14,12 @@ const ScrollToTop = () => {
         }
       };
 
-  if (typeof window !== "undefined") {
-    // Client-side-only code
+  useEffect(() => {
     window.addEventListener("scroll", scrollPosition);
-  }
+    return () => {
+      window.removeEventListener("scroll", scrollPosition);
+    };
+  }, []);
 
   return (
     <button

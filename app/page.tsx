@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Hero from "./ui/Hero";
 // import Background from "./ui/Background";
 import Image from "next/image";
@@ -9,7 +9,46 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import CountUp from "react-countup";
+import TestimonyCard from "./ui/TestimonyCard";
+import { testimonials } from "./lib/data";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 5000,
+  autoplay: true,
+  autoplaySpeed: 1500,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1279,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ]
+}
 
 export default function Home() {
   // const [heroCount, setHeroCount] = useState(0);
@@ -17,15 +56,16 @@ export default function Home() {
   const scrollPosition = () => {
     if (window.scrollY >= 780) {
       setCounterOn(true);
-    } else {
-      setCounterOn(false);
     }
   };
 
-  if (typeof window !== "undefined") {
-    // Client-side-only code
+  useEffect(() => {
     window.addEventListener("scroll", scrollPosition);
-  }
+    return () => {
+      window.removeEventListener("scroll", scrollPosition);
+      setCounterOn(false);
+    };
+  }, []);
 
   return (
     <>
@@ -73,7 +113,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-around gap-5 items-center w-full px-6 py-8 md:py-16 my-10 text-center bg-regent-gray-300 border-regent-gray-400 rounded-2xl shadow-md">
+        <div className="flex flex-wrap justify-around gap-5 items-center w-full px-6 py-8 md:py-16 mt-10 text-center bg-regent-gray-300 border-regent-gray-400 rounded-2xl shadow-md">
           <div className="flex max-md:flex-col items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -189,6 +229,29 @@ export default function Home() {
               </h1>
               <h3 className={`${mulish.className}`}>Area Constructed (Sqm²)</h3>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="padding bg-slate-100 ">
+        <div className="text-left">
+          <h2 className="text-3xl md:text-5xl font-bold">
+            See What Our
+            <span className="text-tall-poppy-700"> Clients </span>
+            Say
+          </h2>
+          <p className="mt-3 text-slate-600 max-w-2xl ">
+            Hear from consultants, contractors, and developers who trust Roofers
+            Group for quality, reliability, and on-time delivery.
+          </p>
+        </div>
+        <div>
+          <div className="mt-12">
+            <Slider {...settings}>
+              {testimonials.map((testimony) => (
+                <TestimonyCard key={testimony.name} {...testimony} />
+              ))}
+            </Slider>
           </div>
         </div>
       </section>
