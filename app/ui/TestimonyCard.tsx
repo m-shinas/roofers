@@ -28,6 +28,7 @@ const TestimonyCard = ({
           </div>
         </div>
         <svg
+          className="max-sm:hidden"
           xmlns="http://www.w3.org/2000/svg"
           width="54"
           height="40"
@@ -39,7 +40,9 @@ const TestimonyCard = ({
           />
         </svg>
       </div>
-      <p className="text-slate-700 text-sm sm:text-base leading-relaxed break-words">{wordings}</p>
+      <p className="text-slate-700 text-sm sm:text-base leading-relaxed break-words">
+        {wordings}
+      </p>
     </div>
   );
 };
