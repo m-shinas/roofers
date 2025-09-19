@@ -17,10 +17,10 @@ const LogoScroll = () => {
   const top = logos.slice(0, 20); // first 20 logos
   const bottom = logos.slice(20); // remaining 21 logos
 
-  const pause = (ref) => ref.current && (ref.current.style.animationPlayState = "paused");
-  const play = (ref) => ref.current && (ref.current.style.animationPlayState = "running");
+  const pause = (ref: React.RefObject<HTMLElement>) => ref.current && (ref.current.style.animationPlayState = "paused");
+  const play = (ref: React.RefObject<HTMLElement>) => ref.current && (ref.current.style.animationPlayState = "running");
 
-  const togglePause = (ref, paused, setPaused) => {
+  const togglePause = (ref: React.RefObject<HTMLElement>, paused: boolean, setPaused: React.Dispatch<React.SetStateAction<boolean>>) => {
     if (paused) {
       play(ref);
       setPaused(false);
