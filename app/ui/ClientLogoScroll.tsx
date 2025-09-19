@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 
-const LogoScroll = () => {
+const ClientLogoScroll = () => {
   const topRef = useRef(null);
   const bottomRef = useRef(null);
 
@@ -91,4 +91,4 @@ const LogoScroll = () => {
   );
 };
 
-export default LogoScroll;
+export default ClientLogoScroll;

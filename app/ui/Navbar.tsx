@@ -23,7 +23,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", changeBackground);
     };
-  }, []);
+  }, [pathname]);
 
   return (
     <header className="w-full fixed z-50">
