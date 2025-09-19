@@ -46,6 +46,41 @@
   }
 }
 
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } /* shift by half (because content is duplicated) */
+}
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+/* utility classes used by the marquee rows */
+.animate-scroll-left {
+  display: flex;
+  width: max-content;               /* so the row can be longer than container */
+  animation: scroll-left 40s linear infinite;
+  animation-play-state: running;
+  will-change: transform;
+}
+
+.animate-scroll-right {
+  display: flex;
+  width: max-content;
+  animation: scroll-right 40s linear infinite;
+  animation-play-state: running;
+  will-change: transform;
+}
+
+/* small cosmetic touch for logos */
+.client-logo {
+  transition: filter .22s ease, transform .18s ease;
+}
+.client-logo:hover {
+  transform: translateY(-3px);
+  filter: none;
+}
+
 @layer components {
   .footer-col {
     @apply basis-[100%] sm:basis-[25%] p-2.5;

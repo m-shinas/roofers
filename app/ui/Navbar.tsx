@@ -4,11 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { mulish } from "./fonts";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  const pathname = usePathname();
+  
+  let scrollYvalue = pathname === "/"  ? 650 : 360;
   const changeBackground = () => {
-    if (window.scrollY >= 650) {
+    if (window.scrollY >= scrollYvalue) {
       setNavbar(true);
     } else {
       setNavbar(false);

@@ -6,7 +6,7 @@ import { mulish } from "./fonts";
 const Hero = () => (
   <div>
     <div className="relative w-full h-screen bg-gradient-to-b from-[#0c0333]/30 to-[#0c0333]/30 py-0 flex items-center justify-start ">
-      <Image src="/roof-hero.jpg" alt="hero" width={1920} height={1080} className="absolute w-full h-full object-cover -z-[1]"/>
+      <Image src="/roof-hero.jpg" alt="hero" width={1920} height={1080} className="absolute w-full h-full object-cover -z-1"/>
       {/* <Suspense fallback={<FontAwesomeIcon icon={faSpinner} spinPulse color="#fff" size="4x"/>}> 
       
       </Suspense> */}

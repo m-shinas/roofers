@@ -124,7 +124,7 @@ export default function Home() {
                   />
                 )}
               </h1>
-              <h3 className={`${mulish.className}`}>Completed Projects</h3>
+              <h3 className={`${mulish.className} text-slate-600`}>Completed Projects</h3>
             </div>
           </div>
           <div className="flex max-md:flex-col items-center justify-center">
@@ -163,7 +163,7 @@ export default function Home() {
                   />
                 )}
               </h1>
-              <h3 className={`${mulish.className}`}>Current Engagements</h3>
+              <h3 className={`${mulish.className} text-slate-600`}>Current Engagements</h3>
             </div>
           </div>
           <div className="flex max-md:flex-col items-center justify-center">
@@ -184,7 +184,7 @@ export default function Home() {
                   />
                 )}
               </h1>
-              <h3 className={`${mulish.className}`}>Total Workforce Hours</h3>
+              <h3 className={`${mulish.className} text-slate-600`}>Total Workforce Hours</h3>
             </div>
           </div>
           <div className="flex max-md:flex-col items-center justify-center">
@@ -213,7 +213,7 @@ export default function Home() {
                   />
                 )}
               </h1>
-              <h3 className={`${mulish.className}`}>Area Constructed (Sqm²)</h3>
+              <h3 className={`${mulish.className} text-slate-600`}>Area Constructed (Sqm²)</h3>
             </div>
           </div>
         </div>
@@ -267,7 +267,7 @@ export default function Home() {
                   className="mb-2 max-w-[200px] max-h-[216px] object-cover rounded-xl"
                 />
                 <code
-                  className={`text-xs bg-slate-200 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
+                  className={`text-xs bg-slate-100 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
                 >
                   Made in Spain
                 </code>
@@ -305,7 +305,7 @@ export default function Home() {
                   className="mb-2 max-w-[200px] max-h-[180px] object-cover rounded-xl"
                 />
                 <code
-                  className={`text-xs bg-slate-200 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
+                  className={`text-xs bg-slate-100 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
                 >
                   Made in Italy
                 </code>
