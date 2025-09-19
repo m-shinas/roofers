@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useRef, useState } from "react";
 
 const LogoScroll = () => {
@@ -45,11 +46,13 @@ const LogoScroll = () => {
             className="flex gap-12 animate-scroll-left select-none touch-manipulation"
           >
             {[...top, ...top].map((src, i) => (
-              <div key={`top-${i}`} className="h-20 w-40 flex items-center justify-center shrink-0">
-                <img
+              <div key={`top-${i}`} className="h-22 w-44 flex items-center justify-center shrink-0">
+                <Image
+                  width={176}
+                  height={88}
                   src={src}
                   alt={`Client ${i + 1}`}
-                  className="max-h-16 object-contain grayscale hover:grayscale-0 transition client-logo"
+                  className="max-h-22 object-contain grayscale hover:grayscale-0 transition client-logo"
                   draggable="false"
                 />
               </div>
@@ -70,11 +73,13 @@ const LogoScroll = () => {
             className="flex gap-12 animate-scroll-right select-none touch-manipulation"
           >
             {[...bottom, ...bottom].map((src, i) => (
-              <div key={`bottom-${i}`} className="h-20 w-40 flex items-center justify-center shrink-0">
-                <img
+              <div key={`bottom-${i}`} className="h-22 w-44 flex items-center justify-center shrink-0">
+                <Image 
+                  width={176}
+                  height={88}
                   src={src}
                   alt={`Client ${20 + (i % bottom.length) + 1}`}
-                  className="max-h-16 object-contain grayscale hover:grayscale-0 transition client-logo"
+                  className="max-h-22 object-contain grayscale hover:grayscale-0 transition client-logo"
                   draggable="false"
                 />
               </div>

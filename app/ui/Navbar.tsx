@@ -10,7 +10,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const pathname = usePathname();
   
-  let scrollYvalue = pathname === "/"  ? 650 : 360;
+  const scrollYvalue = pathname === "/"  ? 650 : 360;
   const changeBackground = () => {
     if (window.scrollY >= scrollYvalue) {
       setNavbar(true);
