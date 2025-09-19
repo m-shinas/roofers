@@ -12,7 +12,7 @@ const SupplierLogoScroll = () => {
   // Build 20 logo paths: /logos/logo1.png ... /logos/logo20.png
   const logos = Array.from(
     { length: 20 },
-    (_, i) => `/Suppliers/supplier-${i + 1}.png`
+    (_, i) => `/suppliers/supplier-${i + 1}.png`
   );
   const top = logos.slice(0, 9); // first 10 logos
   const bottom = logos.slice(10); // remaining 10 logos
