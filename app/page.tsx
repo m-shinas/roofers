@@ -246,11 +246,11 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center max-w-2xl">
             <h2 className="text-3xl md:text-5xl font-bold">
               Explore Our
-              <span className="text-tall-poppy-700"> Clay Roofing </span>
+              <span className="text-tall-poppy-700"> Roofing </span>
               Products
             </h2>
             <p className="mt-3 text-slate-600  ">
-              We manufacture and supply premium-quality products through our
+              We manufacture and supply premium-quality products from our
               partner factories in Italy, Spain, China, Brazil, and the USA. We
               operate on a direct selling model, enabling cost-effective
               procurement without compromising on quality.
@@ -266,6 +266,11 @@ export default function Home() {
                   height={216}
                   className="mb-2 max-w-[200px] max-h-[216px] object-cover rounded-xl"
                 />
+                <code
+                  className={`text-xs mr-2 bg-slate-100 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
+                >
+                  Roof tile
+                </code>
                 <code
                   className={`text-xs bg-slate-100 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
                 >
@@ -305,7 +310,12 @@ export default function Home() {
                   className="mb-2 max-w-[200px] max-h-[180px] object-cover rounded-xl"
                 />
                 <code
-                  className={`text-xs bg-slate-100 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
+                  className={`text-xs mr-2 bg-slate-100 group-hover:bg-white border border-regent-gray-400 rounded-full p-1`}
+                >
+                  Roof tile
+                </code>
+                <code
+                  className={`text-xs bg-slate-100 group-hover:bg-white border border-regent-gray-400 rounded-full p-1`}
                 >
                   Made in Italy
                 </code>

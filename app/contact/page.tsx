@@ -71,7 +71,7 @@ export default function page() {
                   <div className="inputBox w-full flex flex-col mb-2.5">
                     <span className="mt-2.5 mb-1 font-medium">Message</span>
                     <textarea
-                      className="p-2.5 border border-regent-gray-300 outline-0 resize-none min-h-55 mb-2.5 rounded-lg"
+                      className="p-2.5 border border-regent-gray-300 outline-0 resize-none min-h-60 mb-2.5 rounded-lg"
                       placeholder="Write your message here..."
                     ></textarea>
                   </div>
@@ -82,7 +82,7 @@ export default function page() {
                     <input
                       type="submit"
                       value="Send"
-                      className="bg-tall-poppy-700 border-0 text-white text-[1.1em] cursor-pointer py-3.5 px-4 max-w-30 font-medium rounded-4xl hover:rounded-lg transition-[border-radius] duration-400 ease"
+                      className="bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 border-0 text-white text-[1.1em] cursor-pointer py-3.5 px-4 max-w-30 font-medium rounded-4xl hover:rounded-lg transition-[border-radius] duration-400 ease"
                     />
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export default function page() {
                 className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
               >
                 Abu Dhabi, United Arab Emirates <br />
-                Tel: +971 2 236 7617
+                Tel: <Link href="tel:+97122367617">+971 2 236 7617</Link>
               </p>
             </div>
 
@@ -163,7 +163,7 @@ export default function page() {
                 className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
               >
                 Ajman, United Arab Emirates
-                <br /> Tel: +971 4 458 0127
+                <br /> Tel: <Link href="tel:+97144580127">+971 4 458 0127</Link>
               </p>
             </div>
 
@@ -175,7 +175,7 @@ export default function page() {
                 className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
               >
                 Italy
-                <br /> Tel: +39 0423 920 777
+                <br /> Tel: <Link href="tel:+390423920777">+39 0423 920 777</Link>
               </p>
             </div>
           </div>

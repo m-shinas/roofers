@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Banner from "../ui/Banner";
 import ClientLogoScroll from "../ui/ClientLogoScroll";
 import SupplierLogoScroll from "../ui/SupplierLogoScroll";
+import ImageGallery from "../ui/ImageGallery";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -45,9 +46,19 @@ export default function page() {
         <ClientLogoScroll />
       </section>
 
-      
+      {/* Project Gallery */}
+      <section>
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-3">
+            Recent Projects
+          </h2>
+          <ImageGallery />
+        </div>
 
-      <section className="py-20 bg-white">
+        
+      </section>
+
+      <section className="padding bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold ">Our Suppliers</h2>
           <p className="mt-3 text-slate-600 max-w-2xl mx-auto">
