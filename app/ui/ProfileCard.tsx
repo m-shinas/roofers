@@ -24,7 +24,7 @@ const ProfileCard = ({
     //   </div>
     //   <h1>{name}</h1>
     // </div>
-    <div className=" sm:w-[300px] sm:min-w-[300px] max-w-[300px] max-h-[380px] relative group rounded-xl ">
+    <div className=" sm:w-[300px] sm:min-w-[300px] max-w-[300px] max-h-[380px] relative group rounded-xl shadow-md">
       <div className="overflow-hidden sm:w-[300px] sm:min-w-[300px] max-w-[300px] max-h-[380px] rounded-xl">
         <Image
           src={imgURL}

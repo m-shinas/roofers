@@ -70,7 +70,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col">
             <h2
-              className={`text-tall-poppy-700 text-2xl md:text-5xl capitalize lg:max-w-lg font-bold`}
+              className={`text-tall-poppy-700 text-4xl md:text-5xl capitalize lg:max-w-lg font-bold`}
             >
               Building Strength. Shaping Skylines.
             </h2>
@@ -242,21 +242,21 @@ export default function Home() {
         </div>
       </section>
       <section className="padding">
-        <div className="flex items-center justify-between flex-wrap">
+        <div className="flex max-sm:flex-wrap justify-between items-start">
           <div className="flex flex-col items-center justify-center max-w-2xl">
             <h2 className="text-3xl md:text-5xl font-bold">
               Explore Our
               <span className="text-tall-poppy-700"> Roofing </span>
               Products
             </h2>
-            <p className="mt-3 text-slate-600  ">
+            <p className="mt-3 text-slate-600">
               We manufacture and supply premium-quality products from our
               partner factories in Italy, Spain, China, Brazil, and the USA. We
               operate on a direct selling model, enabling cost-effective
               procurement without compromising on quality.
             </p>
           </div>
-          <div className="my-8 flex justify-center flex-wrap gap-12">
+          <div className="max-sm:my-6 flex justify-center items-center flex-wrap gap-6">
             <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
               <div>
                 <Image
@@ -334,6 +334,44 @@ export default function Home() {
                 </Link>
                 <Link
                   href="https://drive.usercontent.google.com/u/0/uc?id=1Z3ob5bKjZLY-U6pr9zJUKpIh3Xhdfsdt&export=download"
+                  target="_blank"
+                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
+                >
+                  <span>
+                    <FontAwesomeIcon icon={faDownload} />
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
+              <div>
+                <Image
+                  src="/Thatch_Roof.png"
+                  alt="Thatch Roofing"
+                  width={200}
+                  height={216}
+                  className="mb-2 max-w-[200px] max-h-[180px] object-fill rounded-xl"
+                />
+                <code
+                  className={`text-xs mr-2 bg-slate-100 group-hover:bg-white border border-regent-gray-400 rounded-full p-1`}
+                >
+                  Thatch
+                </code>
+              </div>
+
+              <div className="mt-4 flex gap-2 justify-end">
+                <Link
+                  href=""
+                  target="_blank"
+                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
+                >
+                  View{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faFilePdf} />
+                  </span>
+                </Link>
+                <Link
+                  href=""
                   target="_blank"
                   className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
                 >

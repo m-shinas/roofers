@@ -81,49 +81,93 @@ export const testimonials = [
   },
 ];
 
-export const clientLogosRow1 = [
-  "/clients/client-1.png",
-  "/clients/client-2.png",
-  "/clients/client-3.png",
-  "/clients/client-4.png",
-  "/clients/client-5.png",
-  "/clients/client-6.png",
-  "/clients/client-7.png",
-  "/clients/client-8.png",
-  "/clients/client-9.png",
-  "/clients/client-10.png",
-  "/clients/client-11.png",
-  "/clients/client-12.png",
-  "/clients/client-13.png",
-  "/clients/client-14.png",
-  "/clients/client-15.png",
-  "/clients/client-16.png",
-  "/clients/client-17.png",
-  "/clients/client-18.png",
-  "/clients/client-19.png",
-  "/clients/client-20.png",
-];
-
-export const clientLogosRow2 = [
-  "/clients/client-21.png",
-  "/clients/client-22.png",
-  "/clients/client-23.png",
-  "/clients/client-24.png",
-  "/clients/client-25.png",
-  "/clients/client-26.png",
-  "/clients/client-27.png",
-  "/clients/client-28.png",
-  "/clients/client-29.png",
-  "/clients/client-30.png",
-  "/clients/client-31.png",
-  "/clients/client-32.png",
-  "/clients/client-33.png",
-  "/clients/client-34.png",
-  "/clients/client-35.png",
-  "/clients/client-36.png",
-  "/clients/client-37.png",
-  "/clients/client-38.png",
-  "/clients/client-39.png",
-  "/clients/client-40.png",
-  "/clients/client-41.png",
-];
+export const services = [
+  {
+    imgURL: "/works/Bicycle Rack Frames.png",
+    title: "Bicycle Rack Frames",
+  },
+  {
+    imgURL: "/works/Clay Tiling.png",
+    title: "Clay Tiling",
+  },
+  {
+    imgURL: "/works/HDG Steel Staircase With Platform.png",
+    title: "HDG Steel Staircase With Platform",
+  },
+  {
+    imgURL: "/works/MEP Cross over platforms.png",
+    title: "MEP Cross over platform",
+  },
+  {
+    imgURL: "/works/MEP protection guards.png",
+    title: "MEP protection guard",
+  },
+  {
+    imgURL: "/works/Parking Shades.png",
+    title: "Parking Shades",
+  },
+  {
+    imgURL: "/works/Pergola Slanting.png",
+    title: "Pergola",
+  },
+  {
+    imgURL: "/works/Spiral Steel Staircase.png",
+    title: "Spiral Steel Staircase",
+  },
+  {
+    imgURL: "/works/SS Bollards.png",
+    title: "SS Bollards",
+  },
+  {
+    imgURL: "/works/Staircase Handrails Floor Mounted.png",
+    title: "Staircase Handrails Floor Mounted",
+  },
+  {
+    imgURL: "/works/Staircase Handrails Wall Mounted.png",
+    title: "Staircase Handrails Wall Mounted",
+  },
+  {
+    imgURL: "/works/Steel Canopies.png",
+    title: "Steel Canopies",
+  },
+  {
+    imgURL: "/works/Steel Pergola And Cladding.png",
+    title: "Steel Pergola And Cladding",
+  },
+  {
+    imgURL: "/works/Steel Pergola.png",
+    title: "Steel Pergola",
+  },
+  {
+    imgURL: "/works/Steel Roof Decking.png",
+    title: "Steel Roof Decking",
+  },
+  {
+    imgURL: "/works/Steel Roof Framing.png",
+    title: "Steel Roof Framing",
+  },
+  {
+    imgURL: "/works/Steel Staircase And Platform.png",
+    title: "Steel Staircase And Platform",
+  },
+  {
+    imgURL: "/works/Steel Structure For Roof Tiles.png",
+    title: "Steel Structure For Roof Tiles",
+  },
+  {
+    imgURL: "/works/Steel Structure Frames.png",
+    title: "Steel Structure Frames",
+  },
+  {
+    imgURL: "/works/Steel Structure(batten And Rafter For Roof Tiles).png",
+    title: "Steel Structure (Batten And Rafter For Roof Tiles)",
+  },
+  {
+    imgURL: "/works/Steel Support For Claddings.png",
+    title: "Steel Support For Claddings",
+  },
+  {
+    imgURL: "/works/Water Tank Support Frame.png",
+    title: "Water Tank Support Frame",
+  },
+]

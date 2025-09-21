@@ -49,18 +49,18 @@ export default function page() {
             industrial, and high-end residential projects.
           </p>
           <p className={`${mulish.className} mt-4 lg:max-w-lg text-lg`}>
-          Beyond contracting, Roofers Group also connects the UAE market with
-          the world. Through our partner factories in Italy, Spain, China,
-          Brazil, and the USA, we manufacture and supply premium-quality
-          products, ensuring our clients benefit from international standards at
-          competitive value. Our direct selling model keeps procurement
-          efficient and cost-effective, while never compromising on quality.
-        </p>
-        <p className={`${mulish.className} mt-4 lg:max-w-lg text-lg`}>
+            Beyond contracting, Roofers Group also connects the UAE market with
+            the world. Through our partner factories in Italy, Spain, China,
+            Brazil, and the USA, we manufacture and supply premium-quality
+            products, ensuring our clients benefit from international standards
+            at competitive value. Our direct selling model keeps procurement
+            efficient and cost-effective, while never compromising on quality.
+          </p>
+          <p className={`${mulish.className} mt-4 lg:max-w-lg text-lg`}>
             From concept to completion, our journey has always been guided by a
-            commitment to excellence, innovation, and customer trust — values that
-            continue to shape everything we do. 
-        </p>
+            commitment to excellence, innovation, and customer trust — values
+            that continue to shape everything we do.
+          </p>
         </div>
         <div className="flex-1 flex justify-center items-center">
           <Image
@@ -76,7 +76,7 @@ export default function page() {
       {/* Mission / Vision / Services Section */}
       <section className="relative w-full h-[85vh] bg-[url('/roof-bg.JPG')] bg-no-repeat bg-cover bg-bottom flex justify-center items-center mb-20">
         <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/30 to-white/10"></div>
-        <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-3 absolute md:bottom-[-80] z-10">
+        <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-3 absolute md:bottom-[-60] z-10">
           {/* Card 1 */}
           <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-4 sm:p-8 shadow-lg flex ">
             <div className="mr-4">
@@ -153,12 +153,14 @@ export default function page() {
         </div>
       </section>
 
-      <section className="md:my-8 my-4 padding-x py-10 w-full">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#961e21_100%)]"></div>
+      <section className="md:my-8 my-4 padding-x py-10 w-full relative">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_34px]">
+          <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-tall-poppy-700 opacity-20 blur-[100px]"></div>
+        </div>
         <h2 className="text-center text-4xl sm:text-5xl font-bold">
           Our Leaders
         </h2>
-        <div className="my-8 flex justify-center flex-wrap gap-12">
+        <div className="my-14 flex justify-center flex-wrap gap-12">
           {leaders.map((leader) => (
             <ProfileCard key={leader.name} {...leader} />
           ))}

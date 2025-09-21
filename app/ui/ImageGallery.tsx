@@ -36,7 +36,7 @@ const ImageGallery = () => {
               setImgPop(true);
             }}
             key={index}
-            className="w-1/3 md:w-1/4 lg:w-1/6 cursor-pointer hover:scale-105 transition-all ease-linear"
+            className="cursor-pointer hover:scale-105 transition-all ease-linear"
           >
             <Image
               className="w-full h-65 object-cover"
