@@ -154,8 +154,19 @@ export default function page() {
       </section>
 
       <section className="md:my-8 my-4 padding-x py-10 w-full relative">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_34px]">
-          <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-tall-poppy-700 opacity-20 blur-[100px]"></div>
+        <div className="absolute top-0 w-full left-0 overflow-hidden leading-0 -z-10">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            className="fill-tall-poppy-700"
+          >
+            <path
+              d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+              className="shape-fill"
+            ></path>
+          </svg>
         </div>
         <h2 className="text-center text-4xl sm:text-5xl font-bold">
           Our Leaders
