@@ -74,7 +74,7 @@ export default function page() {
       </section>
 
       {/* Mission / Vision / Services Section */}
-      <section className="relative w-full h-[85vh] bg-[url('/roof-bg.JPG')] bg-no-repeat bg-cover bg-bottom flex justify-center items-center mb-20">
+      <section className="relative w-full h-[75vh] bg-[url('/roof-bg.JPG')] bg-no-repeat bg-cover bg-center flex justify-center items-center mb-20">
         <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/30 to-white/10"></div>
         <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-3 absolute md:bottom-[-60] z-10">
           {/* Card 1 */}
@@ -153,8 +153,8 @@ export default function page() {
         </div>
       </section>
 
-      <section className="md:my-8 my-4 padding-x py-10 w-full relative">
-        <div className="absolute top-0 w-full left-0 overflow-hidden leading-0 -z-10">
+      <section className="md:my-8 my-4 padding-x  w-full relative">
+        {/* <div className="absolute top-0 w-full left-0 overflow-hidden leading-0 -z-10">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -167,8 +167,8 @@ export default function page() {
               className="shape-fill"
             ></path>
           </svg>
-        </div>
-        <h2 className="text-center text-4xl sm:text-5xl font-bold">
+        </div> */}
+        <h2 className="drop-shadow-lg text-center text-4xl sm:text-5xl font-semibold bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 text-white text-shadow-lg text-shadow-regent-gray-900 py-8 rounded-b-4xl">
           Our Leaders
         </h2>
         <div className="my-14 flex justify-center flex-wrap gap-12">
