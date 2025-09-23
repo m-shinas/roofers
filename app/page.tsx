@@ -56,6 +56,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <div className="overflow-hidden bg-regent-gray-400">
+        <ul></ul>
+      </div>
       {/* <Background heroCount={heroCount}/> */}
       <section className="padding">
         <div className="flex justify-between items-center max-xl:flex-col-reverse gap-10">
