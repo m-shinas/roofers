@@ -23,7 +23,7 @@ const TestimonyCard = ({
             alt="Client photo"
           />
           <div>
-            <div className="font-semibold text-sm sm:text-base">{name}</div>
+            <div className="font-semibold text-base sm:text-lg">{name}</div>
             <div className="text-xs sm:text-sm text-slate-500">{title}</div>
           </div>
         </div>
@@ -40,7 +40,7 @@ const TestimonyCard = ({
           />
         </svg>
       </div>
-      <p className="text-slate-700 text-sm sm:text-base leading-relaxed break-words">
+      <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
         {wordings}
       </p>
     </div>

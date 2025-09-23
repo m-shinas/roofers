@@ -50,7 +50,7 @@ const ImageGallery = () => {
       </div>
 
       {imgPop && (
-        <div className="fixed top-0 left-0 bottom-0 right-0 bg-black/75 flex items-center justify-center gap-8 z-50">
+        <div onKeyDown={(event) => { if (event.key === "Escape"){setImgPop(false)} }} className="fixed top-0 left-0 bottom-0 right-0 bg-black/75 flex items-center justify-center gap-8 z-50">
           <div  onClick={() => setImgPop(false)}>
             <FontAwesomeIcon
               icon={faClose}

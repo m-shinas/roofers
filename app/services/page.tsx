@@ -149,14 +149,14 @@ export default function Page() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group max-w-75 hover:bg-tall-poppy-700 border shadow-sm overflow-hidden bg-white hover:shadow-lg transition ease-in duration-300"
+              className="group hover:bg-tall-poppy-700 border shadow-sm overflow-hidden bg-white hover:shadow-lg transition ease-in duration-300"
             >
               <Image
                 width={300}
                 height={256}
                 src={service.imgURL}
                 alt={service.title}
-                className="h-64 w-75 object-fill"
+                className="h-64 w-full object-fill"
               />
               <div className="p-5">
                 <h3 className="font-semibold text-lg group-hover:text-white transition ease-in duration-300">
