@@ -56,9 +56,29 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="overflow-hidden bg-regent-gray-400">
-        <ul></ul>
-      </div>
+      <section className="relative overflow-hidden bg-slate-800 text-white py-4">
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none"></div>
+
+        <div
+          className="flex whitespace-nowrap animate-slide group"
+          onTouchStart={(e) => e.currentTarget.classList.toggle("paused")}
+        >
+          {Array.from({ length: 2 }).map((_, round) => (
+            <div key={round} className={`${mulish.className} flex gap-16 px-8`}>
+              <span className="text-lg font-semibold">
+                We offer Roofing | Aluminium | Steel Solutions
+              </span>
+              <span className="text-lg italic font-semibold text-tall-poppy-700">
+                “Celebrating 25 years of excellence”
+              </span>
+              <span className="text-lg font-semibold">
+                Providing Industrial | Commercial | Residential Services
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* <Background heroCount={heroCount}/> */}
       <section className="padding">
         <div className="flex justify-between items-center max-xl:flex-col-reverse gap-10">
@@ -73,7 +93,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col">
             <h2
-              className={`text-tall-poppy-700 text-4xl md:text-5xl capitalize lg:max-w-lg font-bold`}
+              className={`text-tall-poppy-700 text-3xl md:text-5xl capitalize lg:max-w-lg font-bold`}
             >
               Building Strength. Shaping Skylines.
             </h2>
@@ -127,7 +147,9 @@ export default function Home() {
                   />
                 )}
               </h1>
-              <h3 className={`${mulish.className} text-slate-600`}>Completed Projects</h3>
+              <h3 className={`${mulish.className} text-slate-600`}>
+                Completed Projects
+              </h3>
             </div>
           </div>
           <div className="flex max-md:flex-col items-center justify-center">
@@ -166,7 +188,9 @@ export default function Home() {
                   />
                 )}
               </h1>
-              <h3 className={`${mulish.className} text-slate-600`}>Current Engagements</h3>
+              <h3 className={`${mulish.className} text-slate-600`}>
+                Current Engagements
+              </h3>
             </div>
           </div>
           <div className="flex max-md:flex-col items-center justify-center">
@@ -187,7 +211,9 @@ export default function Home() {
                   />
                 )}
               </h1>
-              <h3 className={`${mulish.className} text-slate-600`}>Total Workforce Hours</h3>
+              <h3 className={`${mulish.className} text-slate-600`}>
+                Total Workforce Hours
+              </h3>
             </div>
           </div>
           <div className="flex max-md:flex-col items-center justify-center">
@@ -216,7 +242,9 @@ export default function Home() {
                   />
                 )}
               </h1>
-              <h3 className={`${mulish.className} text-slate-600`}>Area Constructed (Sqm²)</h3>
+              <h3 className={`${mulish.className} text-slate-600`}>
+                Area Constructed (Sqm²)
+              </h3>
             </div>
           </div>
         </div>

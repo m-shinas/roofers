@@ -33,17 +33,20 @@
 
   --color-davys-gray: #484848ff;
   --color-rose-ebony: #594142ff;
+  
+}
 
-  --animate-loop-scroll: loop-scroll 60s linear infinite;
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
-  @keyframes loop-scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+.animate-slide {
+  animation: slide 30s linear infinite;
+}
+
+.animate-slide.paused, .group:hover {
+  animation-play-state: paused !important;
 }
 
 @keyframes scroll-left {
