@@ -38,23 +38,23 @@
 
 @keyframes slide {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-100%); }
 }
 
 .animate-slide {
-  animation: slide 30s linear infinite;
+  animation: slide 15s linear infinite;
 }
 
-.animate-slide.paused, .group:hover {
+.animate-slide.paused {
   animation-play-state: paused !important;
 }
 
 @keyframes scroll-left {
   from { transform: translateX(0); }
-  to   { transform: translateX(-50%); } /* shift by half (because content is duplicated) */
+  to   { transform: translateX(-50% ); } /* shift by half (because content is duplicated) */
 }
 @keyframes scroll-right {
-  from { transform: translateX(-50%); }
+  from { transform: translateX(-75%); }
   to   { transform: translateX(0); }
 }
 

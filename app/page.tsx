@@ -61,21 +61,21 @@ export default function Home() {
         <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none"></div>
 
         <div
-          className="flex whitespace-nowrap animate-slide group"
+          className="flex text-nowrap "
           onTouchStart={(e) => e.currentTarget.classList.toggle("paused")}
         >
-          {Array.from({ length: 2 }).map((_, round) => (
-            <div key={round} className={`${mulish.className} flex gap-16 px-8`}>
-              <span className="text-lg font-semibold">
-                We offer Roofing | Aluminium | Steel Solutions
-              </span>
-              <span className="text-lg italic font-semibold text-tall-poppy-700">
-                “Celebrating 25 years of excellence”
-              </span>
-              <span className="text-lg font-semibold">
-                Providing Industrial | Commercial | Residential Services
-              </span>
-            </div>
+          {Array.from({ length: 1 }).map((_, round) => (
+            <ul key={round} className={`${mulish.className} font-semibold flex gap-20 px-8 animate-slide`}>
+              <li className="">
+                <p>We offer Roofing | Aluminium | Steel Solutions</p>
+              </li>
+              <li className=" italic text-tall-poppy-700">
+                <p>“Celebrating 25 years of excellence”</p>
+              </li>
+              <li className="">
+                <p>Providing Industrial | Commercial | Residential Services</p>
+              </li>
+            </ul>
           ))}
         </div>
       </section>
