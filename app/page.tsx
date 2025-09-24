@@ -14,7 +14,9 @@ import { testimonials } from "./lib/data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { faDownload, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const settings = {
   dots: false,
@@ -57,15 +59,18 @@ export default function Home() {
     <>
       <Hero />
       <section className="relative overflow-hidden bg-slate-800 text-white py-4">
-        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none"></div>
 
         <div
           className="flex text-nowrap "
           onTouchStart={(e) => e.currentTarget.classList.toggle("paused")}
         >
-          {Array.from({ length: 1 }).map((_, round) => (
-            <ul key={round} className={`${mulish.className} font-semibold flex gap-20 px-8 animate-slide`}>
+          {Array.from({ length: 2 }).map((_, round) => (
+            <ul
+              key={round}
+              className={`${mulish.className} font-semibold flex gap-20 px-8 animate-slide`}
+            >
               <li className="">
                 <p>We offer Roofing | Aluminium | Steel Solutions</p>
               </li>
@@ -273,12 +278,10 @@ export default function Home() {
         </div>
       </section>
       <section className="padding">
-        <div className="flex max-sm:flex-wrap justify-between items-start">
-          <div className="flex flex-col items-center justify-center max-w-2xl">
+        <div className="flex max-sm:flex-wrap justify-between items-start gap-8">
+          <div className="flex flex-col justify-center max-w-2xl">
             <h2 className="text-3xl md:text-5xl font-bold">
-              Explore Our
-              <span className="text-tall-poppy-700"> Roofing </span>
-              Products
+              Explore Our Products
             </h2>
             <p className="mt-3 text-slate-600">
               We manufacture and supply premium-quality products from our
@@ -287,132 +290,50 @@ export default function Home() {
               procurement without compromising on quality.
             </p>
           </div>
-          <div className="max-sm:my-6 flex justify-center items-center flex-wrap gap-6">
-            <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
-              <div>
-                <Image
-                  src="/LaEscandella-2025.png"
-                  alt="La Escandella"
-                  width={200}
-                  height={216}
-                  className="mb-2 max-w-[200px] max-h-[216px] object-cover rounded-xl"
-                />
-                <code
-                  className={`text-xs mr-2 bg-slate-100 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
-                >
-                  Roof tile
-                </code>
-                <code
-                  className={`text-xs bg-slate-100 group-hover:bg-white  border border-regent-gray-400 rounded-full p-1`}
-                >
-                  Made in Spain
-                </code>
-              </div>
-
-              <div className="mt-4 flex gap-2 justify-end">
-                <Link
-                  href="https://drive.google.com/file/d/1qzQkCSztrk-2xv-aB2cvys14L32b7vZq/view"
-                  target="_blank"
-                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
-                >
-                  View{" "}
-                  <span>
-                    <FontAwesomeIcon icon={faFilePdf} />
-                  </span>
-                </Link>
-                <Link
-                  href="https://drive.usercontent.google.com/u/0/uc?id=1qzQkCSztrk-2xv-aB2cvys14L32b7vZq&export=download"
-                  target="_blank"
-                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
-                >
-                  <span>
-                    <FontAwesomeIcon icon={faDownload} />
-                  </span>
-                </Link>
-              </div>
-            </div>
-            <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
-              <div>
-                <Image
-                  src="/ICP_Cat_tile.png"
-                  alt="ICP Cat Tile"
-                  width={200}
-                  height={216}
-                  className="mb-2 max-w-[200px] max-h-[180px] object-cover rounded-xl"
-                />
-                <code
-                  className={`text-xs mr-2 bg-slate-100 group-hover:bg-white border border-regent-gray-400 rounded-full p-1`}
-                >
-                  Roof tile
-                </code>
-                <code
-                  className={`text-xs bg-slate-100 group-hover:bg-white border border-regent-gray-400 rounded-full p-1`}
-                >
-                  Made in Italy
-                </code>
-              </div>
-
-              <div className="mt-4 flex gap-2 justify-end">
-                <Link
-                  href="https://drive.google.com/file/d/1Z3ob5bKjZLY-U6pr9zJUKpIh3Xhdfsdt/view"
-                  target="_blank"
-                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
-                >
-                  View{" "}
-                  <span>
-                    <FontAwesomeIcon icon={faFilePdf} />
-                  </span>
-                </Link>
-                <Link
-                  href="https://drive.usercontent.google.com/u/0/uc?id=1Z3ob5bKjZLY-U6pr9zJUKpIh3Xhdfsdt&export=download"
-                  target="_blank"
-                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
-                >
-                  <span>
-                    <FontAwesomeIcon icon={faDownload} />
-                  </span>
-                </Link>
-              </div>
-            </div>
-            <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
-              <div>
-                <Image
-                  src="/Thatch_Roof.png"
-                  alt="Thatch Roofing"
-                  width={200}
-                  height={216}
-                  className="mb-2 max-w-[200px] max-h-[180px] object-fill rounded-xl"
-                />
-                <code
-                  className={`text-xs mr-2 bg-slate-100 group-hover:bg-white border border-regent-gray-400 rounded-full p-1`}
-                >
-                  Thatch
-                </code>
-              </div>
-
-              <div className="mt-4 flex gap-2 justify-end">
-                <Link
-                  href=""
-                  target="_blank"
-                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
-                >
-                  View{" "}
-                  <span>
-                    <FontAwesomeIcon icon={faFilePdf} />
-                  </span>
-                </Link>
-                <Link
-                  href=""
-                  target="_blank"
-                  className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
-                >
-                  <span>
-                    <FontAwesomeIcon icon={faDownload} />
-                  </span>
-                </Link>
-              </div>
+          <div className=" sm:w-[260px] sm:min-w-[260px] w-[230px] h-[183px] rounded-[15px] shadow-2xl relative overflow-hidden group">
+            <Image
+              src="/roof_tile_cover.jpg"
+              alt="cargo"
+              width={260}
+              height={213}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute top-4 px-4 ">
+              <h3
+                className={` ${mulish.className} text-white text-2xl leading-snug font-semibold`}
+              >
+                Roof Tiles
+              </h3>
             </div>
           </div>
+          <div className=" sm:w-[260px] sm:min-w-[260px] w-[230px] h-[183px] rounded-[15px] shadow-2xl relative overflow-hidden group">
+            <Image
+              src="/Thatch_cover.jpg"
+              alt="cargo"
+              width={260}
+              height={213}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute top-4 px-4 ">
+              <h3
+                className={` ${mulish.className} text-white text-2xl leading-snug font-semibold`}
+              >
+                Thatch
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div className="mt-6 text-right">
+          <Link
+            className=" text-tall-poppy-700 hover:text-tall-poppy-600 font-semibold group"
+            href="/products"
+          >
+            Explore All Products{" "}
+            <FontAwesomeIcon
+              className="group-hover:translate-x-2 transition duration-300 ease-linear"
+              icon={faArrowRight}
+            />
+          </Link>
         </div>
       </section>
     </>
