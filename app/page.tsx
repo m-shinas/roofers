@@ -281,7 +281,7 @@ export default function Home() {
         <div className="flex max-sm:flex-wrap justify-between items-start gap-8">
           <div className="flex flex-col justify-center max-w-2xl">
             <h2 className="text-3xl md:text-5xl font-bold">
-              Explore Our Products
+              Explore Our <span className="text-tall-poppy-700">Products</span> 
             </h2>
             <p className="mt-3 text-slate-600">
               We manufacture and supply premium-quality products from our
@@ -328,9 +328,9 @@ export default function Home() {
             className=" text-tall-poppy-700 hover:text-tall-poppy-600 font-semibold group"
             href="/products"
           >
-            Explore All Products{" "}
+            See Product Catalogues{" "}
             <FontAwesomeIcon
-              className="group-hover:translate-x-2 transition duration-300 ease-linear"
+              className="group-hover:translate-x-1 transition duration-300 ease-linear"
               icon={faArrowRight}
             />
           </Link>

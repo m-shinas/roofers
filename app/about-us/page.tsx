@@ -153,22 +153,9 @@ export default function page() {
         </div>
       </section>
 
-      <section className="md:my-8 my-4 padding-x  w-full relative">
-        {/* <div className="absolute top-0 w-full left-0 overflow-hidden leading-0 -z-10">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-            className="fill-tall-poppy-700"
-          >
-            <path
-              d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div> */}
-        <h2 className="drop-shadow-lg text-center text-4xl sm:text-5xl font-semibold bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 text-white text-shadow-lg text-shadow-regent-gray-900 py-8 rounded-b-4xl">
+      <section className="md:my-8 my-4 padding-x w-full relative">
+       
+        <h2 className="drop-shadow-lg text-center text-4xl sm:text-5xl font-semibold bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 text-white text-shadow-lg text-shadow-regent-gray-950 py-8 rounded-b-4xl">
           Our Leaders
         </h2>
         <div className="my-14 flex justify-center flex-wrap gap-12">

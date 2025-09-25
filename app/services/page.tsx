@@ -39,9 +39,9 @@ export default function Page() {
       <Banner />
 
       <section className="padding text-center">
-        <span className="text-3xl sm:text-5xl font-medium">Our Works</span>
+        
         <div
-          className={`my-5 text-left flex flex-wrap justify-around gap-5 mx-0 py-4 px-4 max-md:px-4 border border-regent-gray-400`}
+          className={` text-left flex flex-wrap justify-around gap-5 mx-0 py-4 px-4 max-md:px-4 border border-regent-gray-400 rounded-2xl`}
         >
           <div className="flex items-center justify-center gap-2">
             <svg
@@ -136,15 +136,76 @@ export default function Page() {
             </h2>
           </div>
         </div>
-        <p className="my-4 text-lg text-center">
-          Explore our completed works across roofing, steel and aluminium
-          fabrication.
-        </p>
+        
+      </section>
+      <section className="padding-x">
+        <h2 className="mb-8 text-center text-3xl md:text-5xl font-bold">
+          Roofing Services
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="text-lg font-medium">
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Cladding Bricks and Natural/Engineered Stone</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Thatch</p>
+            <div className="bg-regent-gray-400 p-4 rounded-2xl">
+              <p>Non-Clay Roofing Accessories, such as:</p>
+              <ul className={`${mulish.className} list-[lower-roman] list-inside font-light leading-loose`}>
+                <li>Bird Stoppers</li>
+                <li>Timber Battens</li>
+                <li>Marine Plywood</li>
+                <li>Waterproofing Membranes</li>
+                <li>Screws and Fixing Systems</li>
+                <li>Roof Truss Systems in both Timber and Steel Structures</li>
+              </ul>
+            </div>
+          </div>
+          <div className="text-lg font-medium">
+            <p className=" my-4 bg-regent-gray-400 rounded-2xl p-4">Clay Roofing Tiles & Accessories</p>
+            <div className="bg-regent-gray-400 p-4 rounded-2xl">
+              <p>Specialty Clay and Terracotta Products, including:</p>
+              <ul className={`${mulish.className} list-[lower-roman] list-inside font-light leading-loose`}>
+                <li>Clay Bricks</li>
+                <li>Decorative Bricks</li>
+                <li>Flue Liners</li>
+                <li>Chimneys</li>
+                <li>Cotto Blocks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h2 className="my-8 text-center text-3xl md:text-5xl font-bold">
+          Metal Services
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="text-lg font-medium">
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Industrial steel sheds & ware houses </p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Civil construction & contracting works</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Portal and tubular trusses</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Steel structural platforms</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Mezzanine floors</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Type of car parking sheds</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Plant erection and maintenance</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Sliding and hinged steel doors</p>
+          </div>
+          <div className="text-lg font-medium">
+            <p className=" my-4 bg-regent-gray-400 rounded-2xl p-4">Types of staircases and handrails</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Type of Ladders</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Steel Lift Structures</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Steel roofing and cladding works</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Gates and grills</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Fencing</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Type of canopies and pergolas</p>
+            <p className="my-4 bg-regent-gray-400 rounded-2xl p-4">Kick plates, trench covers, Etc..</p>
+          </div>
+        </div>
       </section>
 
       <section className="relative py-8 max-w-7xl mx-auto px-4">
         <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_2px,transparent_2px)] bg-[size:24px_34px]"></div>
-        
+        <h2 className="text-center text-3xl sm:text-5xl font-bold">Our Works</h2>
+        <p className="my-8 text-lg text-center">
+          Explore our completed works across roofing, steel and aluminium
+          fabrication.
+        </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => (
             <div
