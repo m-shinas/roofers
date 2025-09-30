@@ -81,93 +81,80 @@ export const testimonials = [
   },
 ];
 
-export const services = [
+export const MetalServices = [
   {
-    imgURL: "/works/Bicycle_Rack.png",
+    imgURL: "/services/Bicycle_Rack.png",
     title: "Bicycle Rack Frames",
   },
   {
-    imgURL: "/works/Clay Tiling.png",
-    title: "Clay Tiling",
+    imgURL: "/services/Bird_Spikes.png",
+    title: "Bird Spikes",
   },
   {
-    imgURL: "/works/HDG Steel Staircase With Platform.png",
-    title: "HDG Steel Staircase With Platform",
+    imgURL: "/services/Crossover_Platforms.png",
+    title: "Crossover Platforms",
   },
   {
-    imgURL: "/works/MEP Cross over platforms.png",
-    title: "MEP Cross over platform",
+    imgURL: "/services/Glass_Frames.png",
+    title: "Glass Frames",
   },
   {
-    imgURL: "/works/MEP protection guards.png",
-    title: "MEP protection guard",
+    imgURL: "/services/Louver.png",
+    title: "Louver",
   },
   {
-    imgURL: "/works/Parking Shades.png",
+    imgURL: "/services/Metal_Fencing.png",
+    title: "Metal Fencing",
+  },
+  {
+    imgURL: "/services/Mezzanine_floor.png",
+    title: "Mezzanine floors",
+  },
+  {
+    imgURL: "/services/SS_Bollards.png",
+    title: "Stainless Steel Bollards ",
+  },
+  {
+    imgURL: "/services/Steel_Aluminum_Stairs.png",
+    title: "Steel and Aluminum Stairs",
+  },
+  {
+    imgURL: "/services/Steel_Structural_Frames.png",
+    title: "Steel Structural Frames",
+  },
+  {
+    imgURL: "/services/Steel_Structure_roofing.png",
+    title: "Steel Structure for roofing",
+  },
+  {
+    imgURL: "/services/Other_Metal_Services.png",
+    title: "Other Metal Services",
+  },
+]
+
+export const RoofingServices = [
+  {
+    imgURL: "/services/Roof_tile.png",
+    title: "Roofing Clay Tiles & Accessories",
+  },
+  {
+    imgURL: "/services/Thatch.png",
+    title: "Thatch",
+  },
+  {
+    imgURL: "/services/shades.png",
     title: "Parking Shades",
   },
   {
-    imgURL: "/works/Pergola Slanting.png",
-    title: "Pergola",
+    imgURL: "/services/Panel_Roofing.png",
+    title: "Pannel Roofing",
   },
   {
-    imgURL: "/works/Spiral Steel Staircase.png",
-    title: "Spiral Steel Staircase",
+    imgURL: "/services/Pergolas.png",
+    title: "Pergolas",
   },
   {
-    imgURL: "/works/SS Bollards.png",
-    title: "SS Bollards",
-  },
-  {
-    imgURL: "/works/Staircase Handrails Floor Mounted.png",
-    title: "Staircase Handrails Floor Mounted",
-  },
-  {
-    imgURL: "/works/Staircase Handrails Wall Mounted.png",
-    title: "Staircase Handrails Wall Mounted",
-  },
-  {
-    imgURL: "/works/Steel Canopies.png",
-    title: "Steel Canopies",
-  },
-  {
-    imgURL: "/works/Steel Pergola And Cladding.png",
-    title: "Steel Pergola And Cladding",
-  },
-  {
-    imgURL: "/works/Steel Pergola.png",
-    title: "Steel Pergola",
-  },
-  {
-    imgURL: "/works/Steel Roof Decking.png",
-    title: "Steel Roof Decking",
-  },
-  {
-    imgURL: "/works/Steel Roof Framing.png",
-    title: "Steel Roof Framing",
-  },
-  {
-    imgURL: "/works/Steel Staircase And Platform.png",
-    title: "Steel Staircase And Platform",
-  },
-  {
-    imgURL: "/works/Steel Structure For Roof Tiles.png",
-    title: "Steel Structure For Roof Tiles",
-  },
-  {
-    imgURL: "/works/Steel Structure Frames.png",
-    title: "Steel Structure Frames",
-  },
-  {
-    imgURL: "/works/Steel Structure(batten And Rafter For Roof Tiles).png",
-    title: "Steel Structure (Batten And Rafter For Roof Tiles)",
-  },
-  {
-    imgURL: "/works/Steel Support For Claddings.png",
-    title: "Steel Support For Claddings",
-  },
-  {
-    imgURL: "/works/Water Tank Support Frame.png",
-    title: "Water Tank Support Frame",
-  },
+    imgURL: "/services/Canopy.png",
+    title: "Canopy",
+  }
 ]
