@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import Footer from "./ui/Footer";
 import ScrollToTop from "./ui/scrollToTop";
 import Navbar from "./ui/Navbar";
+import WhatsappBtn from "./ui/WhatsappBtn";
 
 config.autoAddCss = false
 
@@ -50,6 +51,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <WhatsappBtn />
         <ScrollToTop />
         <Footer />
       </body>

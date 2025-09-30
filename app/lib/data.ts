@@ -83,7 +83,7 @@ export const testimonials = [
 
 export const services = [
   {
-    imgURL: "/works/Bicycle Rack Frames.png",
+    imgURL: "/works/Bicycle_Rack.png",
     title: "Bicycle Rack Frames",
   },
   {

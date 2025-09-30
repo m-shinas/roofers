@@ -14,9 +14,7 @@ import { testimonials } from "./lib/data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const settings = {
   dots: false,
@@ -42,7 +40,7 @@ export default function Home() {
   // const [heroCount, setHeroCount] = useState(0);
   const [counterOn, setCounterOn] = useState(false);
   const scrollPosition = () => {
-    if (window.scrollY >= 780) {
+    if (window.scrollY >= 680) {
       setCounterOn(true);
     }
   };
@@ -89,11 +87,11 @@ export default function Home() {
         <div className="flex justify-between items-center max-xl:flex-col-reverse gap-10">
           <div className=" max-w-[700px] max-h-[600px]">
             <Image
-              src="/hero_sec.jpg"
+              src="/hero_sec.tif"
               alt="Roof work"
               width={773}
               height={687}
-              className="object-contain w-full rounded-2xl"
+              className="object-center w-full rounded-2xl"
             />
           </div>
           <div className="flex flex-col">
@@ -127,7 +125,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-around gap-5 items-center w-full px-6 py-8 md:py-16 mt-10 text-center bg-regent-gray-300 border-regent-gray-400 rounded-2xl shadow-md">
+        <div className="flex flex-wrap justify-around gap-5 items-center w-full px-4 py-6 md:py-10 mt-10 text-center bg-regent-gray-300 border-regent-gray-400 rounded-2xl shadow-md">
           <div className="flex max-md:flex-col items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +139,7 @@ export default function Home() {
               />
             </svg>
             <div className="md:pl-4 pt-4 md:ml-4 mt-4 max-md:border-t-1 md:border-l-1 ">
-              <h1 className="text-6xl text-tall-poppy-700">
+              <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
                     end={174}
@@ -182,7 +180,7 @@ export default function Home() {
               />
             </svg>
             <div className="md:pl-4 pt-4 md:ml-4 mt-4 max-md:border-t-1 md:border-l-1 ">
-              <h1 className="text-6xl text-tall-poppy-700">
+              <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
                     end={8}
@@ -205,7 +203,7 @@ export default function Home() {
               size="2xl"
             />
             <div className="md:pl-4 pt-4 md:ml-3 mt-3 max-md:border-t-1 md:border-l-1 ">
-              <h1 className="text-6xl text-tall-poppy-700">
+              <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
                     end={1900000}
@@ -236,7 +234,7 @@ export default function Home() {
               />
             </svg>
             <div className="md:pl-4 pt-4 md:ml-4 mt-4 max-md:border-t-1 md:border-l-1 ">
-              <h1 className="text-6xl text-tall-poppy-700">
+              <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
                     end={500000}
@@ -278,55 +276,48 @@ export default function Home() {
         </div>
       </section>
       <section className="padding">
-        <div className="flex max-sm:flex-wrap justify-between items-start gap-8">
-          <div className="flex flex-col justify-center max-w-2xl">
-            <h2 className="text-3xl md:text-5xl font-bold">
-              Explore Our <span className="text-tall-poppy-700">Products</span> 
-            </h2>
-            <p className="mt-3 text-slate-600">
-              We manufacture and supply premium-quality products from our
-              partner factories in Italy, Spain, China, Brazil, and the USA. We
-              operate on a direct selling model, enabling cost-effective
-              procurement without compromising on quality.
-            </p>
-          </div>
-          <div className=" sm:w-[260px] sm:min-w-[260px] w-[230px] h-[183px] rounded-[15px] shadow-2xl relative overflow-hidden group">
+        <div className="flex flex-col justify-center max-w-2xl">
+          <h2 className="text-3xl md:text-5xl font-bold">
+            Explore Our <span className="text-tall-poppy-700">Products</span>
+          </h2>
+          <p className="mt-3 text-slate-600">
+            We manufacture and supply premium-quality products from our partner
+            factories in Italy, Spain, China, Brazil, and the USA. We operate on
+            a direct selling model, enabling cost-effective procurement without
+            compromising on quality.
+          </p>
+        </div>
+        <div className="mt-12 flex max-sm:flex-wrap justify-center items-center gap-16">
+          <div className=" sm:w-[300px] sm:min-w-[260px] w-[230px] h-[223px] relative overflow-hidden group">
             <Image
-              src="/roof_tile_cover.jpg"
+              src="/TGO.png"
               alt="cargo"
               width={260}
               height={213}
-              className="w-full h-full object-cover"
+              className="w-full h-full hover:drop-shadow-lg hover:drop-shadow-tall-poppy-700 rounded-xl"
             />
-            <div className="absolute top-4 px-4 ">
-              <h3
-                className={` ${mulish.className} text-white text-2xl leading-snug font-semibold`}
-              >
-                Roof Tiles
-              </h3>
-            </div>
           </div>
-          <div className=" sm:w-[260px] sm:min-w-[260px] w-[230px] h-[183px] rounded-[15px] shadow-2xl relative overflow-hidden group">
+          <div className=" sm:w-[300px] sm:min-w-[260px] w-[230px] h-[223px]  relative overflow-hidden group">
             <Image
-              src="/Thatch_cover.jpg"
+              src="/Thatch_trans.png"
               alt="cargo"
               width={260}
               height={213}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:drop-shadow-lg hover:drop-shadow-tall-poppy-700 rounded-xl"
             />
-            <div className="absolute top-4 px-4 ">
+            {/* <div className="absolute top-4 right-0 px-4 ">
               <h3
                 className={` ${mulish.className} text-white text-2xl leading-snug font-semibold`}
               >
                 Thatch
               </h3>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-6 text-right">
           <Link
             className=" text-tall-poppy-700 hover:text-tall-poppy-600 font-semibold group"
-            href="/products"
+            href="/services#products"
           >
             See Product Catalogues{" "}
             <FontAwesomeIcon
