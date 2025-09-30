@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Banner from "../ui/Banner";
 import { mulish } from "../ui/fonts";
-import { MetalServices, RoofingServices, services } from "../lib/data";
+import { MetalServices, RoofingServices} from "../lib/data";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
