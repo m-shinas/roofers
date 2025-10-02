@@ -14,9 +14,7 @@ import { testimonials } from "./lib/data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {
-  faArrowRight
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const settings = {
   dots: false,
@@ -261,29 +259,37 @@ export default function Home() {
           {/* Left - Images with Badge */}
           <div className="relative grid grid-cols-2 grid-rows-2 gap-4">
             <div className="col-span-2 rounded-2xl overflow-hidden">
-              <img
+              <Image
+                width={500}
+                height={192}
                 src="/roof-serv.jpg"
                 alt="Roofing work"
                 className="w-full h-48 object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden">
-              <img
+              <Image
+                width={292}
+                height={192}
                 src="/aluminium-hero.png"
-                alt="Roof construction"
+                alt="Aluminium Fabrication"
                 className="w-full h-48 object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden">
-              <img
+              <Image
+                width={292}
+                height={192}
                 src="/steel-hero.jpg"
-                alt="Roof installation"
+                alt="Steel Fabrication"
                 className="w-full h-48 object-cover"
               />
             </div>
 
             {/* Years of Experience Badge */}
-            <div className={` ${mulish.className} absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-800 text-white rounded-2xl px-8 py-8 text-center shadow-lg border-4 border-tall-poppy-700`}>
+            <div
+              className={` ${mulish.className} absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-800 text-white rounded-2xl px-8 py-8 text-center shadow-lg border-4 border-tall-poppy-700`}
+            >
               <div className="text-5xl font-extrabold">25</div>
               <div className="mt-2 text-lg tracking-wide">
                 Years of
@@ -302,11 +308,11 @@ export default function Home() {
             <p
               className={`${mulish.className} mt-4 text-slate-600 text-lg leading-7`}
             >
-              We specialise in Roof Tiles, Aluminium, and
-              Stainless-Steel Fabrication. With fully equipped workshops and
-              highly skilled teams based in Dubai, Abu Dhabi and Ajman we
-              provide complete structural and finishing solutions for
-              commercial, industrial, and residential projects.
+              We specialise in Roof Tiles, Aluminium, and Stainless-Steel
+              Fabrication. With fully equipped workshops and highly skilled
+              teams based in Dubai, Abu Dhabi and Ajman we provide complete
+              structural and finishing solutions for commercial, industrial, and
+              residential projects.
             </p>
 
             <div className="flex flex-wrap gap-4 items-center justify-between mt-8">
@@ -380,7 +386,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-4">
                 <div className="h-14 w-14 flex items-center justify-center rounded-full border-2 border-tall-poppy-700 font-bold">
-                  <FontAwesomeIcon icon={faHouse} size="2xl" color="#b32024"/>
+                  <FontAwesomeIcon icon={faHouse} size="2xl" color="#b32024" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">Residential</h3>
