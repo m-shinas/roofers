@@ -7,14 +7,16 @@ import Image from "next/image";
 import { mulish } from "./ui/fonts";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-regular-svg-icons";
+import { faClock, faHouse } from "@fortawesome/free-regular-svg-icons";
 import CountUp from "react-countup";
 import TestimonyCard from "./ui/TestimonyCard";
 import { testimonials } from "./lib/data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 
 const settings = {
   dots: false,
@@ -101,14 +103,14 @@ export default function Home() {
               Building Strength. Shaping Skylines.
             </h2>
             <p
-              className={`${mulish.className} mt-4 lg:max-w-lg text-lg leading-7`}
+              className={`${mulish.className} mt-4 lg:max-w-lg text-lg leading-7 text-slate-600`}
             >
               Roof tiles, high‑quality steel, aluminium & stainless‑steel
               fabrication, erection and civil contracting for commercial,
               industrial and high‑end residential projects.
             </p>
             <p
-              className={`${mulish.className} mt-4 lg:max-w-lg text-lg leading-7`}
+              className={`${mulish.className} mt-4 lg:max-w-lg text-lg leading-7 text-slate-600`}
             >
               From iconic clay roofing to advanced steel and aluminium
               structures — delivering excellence, durability and design
@@ -253,6 +255,150 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Services Intro Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left - Images with Badge */}
+          <div className="relative grid grid-cols-2 grid-rows-2 gap-4">
+            <div className="col-span-2 rounded-2xl overflow-hidden">
+              <img
+                src="/roof-serv.jpg"
+                alt="Roofing work"
+                className="w-full h-48 object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="/aluminium-hero.png"
+                alt="Roof construction"
+                className="w-full h-48 object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="/steel-hero.jpg"
+                alt="Roof installation"
+                className="w-full h-48 object-cover"
+              />
+            </div>
+
+            {/* Years of Experience Badge */}
+            <div className={` ${mulish.className} absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-800 text-white rounded-2xl px-8 py-8 text-center shadow-lg border-4 border-tall-poppy-700`}>
+              <div className="text-5xl font-extrabold">25</div>
+              <div className="mt-2 text-lg tracking-wide">
+                Years of
+                <br />
+                Experience
+              </div>
+            </div>
+          </div>
+
+          {/* Right - Text & CTA */}
+          <div>
+            <h2 className="text-3xl md:text-5xl font-bold">
+              Discover Our Range of{" "}
+              <span className="text-tall-poppy-700">Services</span>
+            </h2>
+            <p
+              className={`${mulish.className} mt-4 text-slate-600 text-lg leading-7`}
+            >
+              We specialise in Roof Tiles, Aluminium, and
+              Stainless-Steel Fabrication. With fully equipped workshops and
+              highly skilled teams based in Dubai, Abu Dhabi and Ajman we
+              provide complete structural and finishing solutions for
+              commercial, industrial, and residential projects.
+            </p>
+
+            <div className="flex flex-wrap gap-4 items-center justify-between mt-8">
+              <div className="flex items-center gap-4">
+                <div className="h-14 w-14 flex items-center justify-center rounded-full border-2 border-tall-poppy-700 font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="none"
+                  >
+                    <path
+                      fill="#b32024"
+                      d="M29.44 8.32H.64A.64.64 0 0 1 0 7.68V6.4a.64.64 0 0 1 .18-.448l1.868-1.92a.64.64 0 0 1 .46-.192h23.2a.64.64 0 0 1 .295.07l3.731 1.92a.64.64 0 0 1 .346.57v1.28a.64.64 0 0 1-.64.64zM1.28 7.04H28.8v-.25l-3.245-1.67H2.778L1.28 6.662v.378z"
+                    />
+                    <path
+                      fill="#b32024"
+                      d="M8.91 5.12H5.12a.64.64 0 0 1-.64-.64V.64A.64.64 0 0 1 5.12 0H6.4a.64.64 0 0 1 .538.288l2.509 3.84a.64.64 0 0 1 0 .64.64.64 0 0 1-.538.352zM5.76 3.84h1.965l-1.67-2.56H5.76v2.56zm3.2 24.96H5.12a.64.64 0 0 1-.64-.64V7.68a.64.64 0 0 1 .64-.64h3.84a.64.64 0 0 1 .64.64v20.48a.64.64 0 0 1-.64.64zm-3.2-1.28h2.56V8.32H5.76v19.2zM31.36 32H16a.64.64 0 0 1-.64-.64v-8.32a.64.64 0 0 1 .64-.64h7.04v-3.2a.64.64 0 0 1 .64-.64h7.68a.64.64 0 0 1 .64.64v12.16a.64.64 0 0 1-.64.64zm-14.72-1.28h14.08V19.84h-6.4v3.2a.64.64 0 0 1-.64.64h-7.04v7.04z"
+                    />
+                    <path
+                      fill="#b32024"
+                      d="M17.28 23.68a.64.64 0 0 1-.64-.64v-5.76a.64.64 0 0 1 1.28 0v5.76a.64.64 0 0 1-.64.64zm6.4 0a.64.64 0 0 1-.64-.64v-8.96a.64.64 0 0 1 1.28 0v8.96a.64.64 0 0 1-.64.64zm6.4-3.84a.64.64 0 0 1-.64-.64v-6.4a.64.64 0 0 1 1.28 0v6.4a.64.64 0 0 1-.64.64z"
+                    />
+                    <path
+                      fill="#b32024"
+                      d="M23.68 21.12h-6.4a.64.64 0 1 1 0-1.28h6.4a.64.64 0 1 1 0 1.28zm6.4-3.84h-6.4a.64.64 0 1 1 0-1.28h6.4a.64.64 0 1 1 0 1.28z"
+                    />
+                    <path
+                      fill="#b32024"
+                      d="M20.48 23.68a.64.64 0 0 1-.64-.64v-4.48a.64.64 0 0 1 1.28 0v4.48a.64.64 0 0 1-.64.64zm6.4-3.84a.64.64 0 0 1-.64-.64v-4.48a.64.64 0 0 1 1.28 0v4.48a.64.64 0 0 1-.64.64zM21.12 16h-8.96a.64.64 0 0 1-.64-.64V12.8a.64.64 0 0 1 .64-.64h8.96a.64.64 0 0 1 .64.64v2.56a.64.64 0 0 1-.64.64zm-8.32-1.28h7.68v-1.28H12.8v1.28z"
+                    />
+                    <path
+                      fill="#b32024"
+                      d="M16.64 13.44a.64.64 0 0 1-.64-.64V7.68a.64.64 0 1 1 1.28 0v5.12a.64.64 0 0 1-.64.64zM10.88 32H3.2a.64.64 0 0 1-.64-.64v-3.2a.64.64 0 0 1 .64-.64h7.68a.64.64 0 0 1 .64.64v3.2a.64.64 0 0 1-.64.64zm-7.04-1.28h6.4V28.8h-6.4v1.92z"
+                    />
+                    <path
+                      fill="#b32024"
+                      d="M5.12 28.16a.64.64 0 0 1-.454-1.094l3.84-3.84a.643.643 0 0 1 .909.908l-3.84 3.84a.641.641 0 0 1-.455.186z"
+                    />
+                    <path
+                      fill="#b32024"
+                      d="M8.96 24.32a.64.64 0 0 1-.454-.186l-3.84-3.84a.643.643 0 0 1 .909-.908l3.84 3.84a.64.64 0 0 1-.455 1.094z"
+                    />
+                    <path
+                      fill="#b32024"
+                      d="M5.12 20.48a.64.64 0 0 1-.454-1.094l3.84-3.84a.643.643 0 0 1 .909.908l-3.84 3.84a.641.641 0 0 1-.455.186zm0-7.68a.64.64 0 0 1-.454-1.094l3.84-3.84a.643.643 0 1 1 .909.908l-3.84 3.84a.641.641 0 0 1-.455.186z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Industrial</h3>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="h-14 w-14 flex items-center justify-center rounded-full border-2 border-tall-poppy-700 font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="32"
+                    fill="none"
+                  >
+                    <path
+                      fill="#b32024"
+                      d="M3.486 0H17.23c.476 0 .862.408.862.912v4.875L30.7 2.551c.552-.196 1.135.238 1.135.864v23.798h1.762c.476 0 .862.408.862.911v2.964c0 .503-.386.912-.862.912H.862C.386 32 0 31.591 0 31.088v-2.964c0-.503.386-.911.862-.911h1.762V.912c0-.504.386-.912.862-.912zM7.21 3.29h6.299c.475 0 .861.409.861.912v2.869c0 .503-.386.911-.861.911h-6.3c-.475 0-.861-.408-.861-.911V4.202c0-.503.386-.912.862-.912zm5.437 1.824H8.07v1.045h4.575V5.114zM7.209 8.52h6.299c.475 0 .861.408.861.912V12.3c0 .504-.386.912-.861.912h-6.3c-.475 0-.861-.408-.861-.912V9.433c0-.504.386-.912.862-.912zm5.437 1.823H8.07v1.045h4.575v-1.044zm9.144 2.785c-1.134 0-1.134-1.824 0-1.824h4.624c1.134 0 1.134 1.824 0 1.824H21.79zm0 2.953c-1.134 0-1.134-1.824 0-1.824h4.624c1.134 0 1.134 1.824 0 1.824H21.79zm0 2.953c-1.134 0-1.134-1.824 0-1.824h4.624c1.134 0 1.134 1.824 0 1.824H21.79zm0-8.859c-1.134 0-1.134-1.823 0-1.823h4.624c1.134 0 1.134 1.823 0 1.823H21.79zM1.724 29.036v1.14h31.012v-1.14H1.724zm19.798-1.823v-4.384c0-.503.386-.912.862-.912h2.988c.475 0 .861.409.861.912v4.384h3.879V4.573l-12.02 3.084v19.556h3.43zm2.988 0V23.74h-1.264v3.472h1.264zm-14.943 0h1.582V20.13H9.567v7.081zm-1.724 0v-7.994c0-.503.386-.912.862-.912h3.306c.476 0 .862.409.862.913v7.993h3.495V1.823H4.348v25.39h3.495z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Commercial</h3>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="h-14 w-14 flex items-center justify-center rounded-full border-2 border-tall-poppy-700 font-bold">
+                  <FontAwesomeIcon icon={faHouse} size="2xl" color="#b32024"/>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Residential</h3>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 text-right">
+              <Link
+                href="/services"
+                className=" px-6 py-3 text-white bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 rounded-4xl hover:rounded-lg transition-[border-radius] duration-400 ease shadow-lg"
+              >
+                Explore All Services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="padding bg-slate-100 ">
         <div className="text-left">
           <h2 className="text-3xl md:text-5xl font-bold">
@@ -296,22 +442,29 @@ export default function Home() {
               height={213}
               className="w-full h-full hover:drop-shadow-lg hover:drop-shadow-tall-poppy-700 rounded-xl"
             />
+            <div className="text-tall-poppy-700 absolute top-10 left-5 px-4 bg-white/30 backdrop-blur-none rounded-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+              <h3
+                className={` ${mulish.className}  text-2xl leading-snug font-semibold`}
+              >
+                Roof tile
+              </h3>
+            </div>
           </div>
           <div className=" sm:w-[300px] sm:min-w-[260px] w-[230px] h-[223px]  relative overflow-hidden group">
             <Image
-              src="/Thatch_trans.png"
+              src="/Thatch_single.png"
               alt="cargo"
               width={260}
               height={213}
               className="w-full h-full object-cover hover:drop-shadow-lg hover:drop-shadow-tall-poppy-700 rounded-xl"
             />
-            {/* <div className="absolute top-4 right-0 px-4 ">
+            <div className="text-tall-poppy-700 absolute top-10 left-10 px-4 bg-white/30 backdrop-blur-none rounded-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
               <h3
-                className={` ${mulish.className} text-white text-2xl leading-snug font-semibold`}
+                className={` ${mulish.className}  text-2xl leading-snug font-semibold`}
               >
                 Thatch
               </h3>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="mt-6 text-right">

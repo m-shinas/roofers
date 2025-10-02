@@ -81,7 +81,31 @@ export const testimonials = [
   },
 ];
 
-export const MetalServices = [
+export const Services = [
+  {
+    imgURL: "/services/Roof_tile.png",
+    title: "Roofing Clay Tiles & Accessories",
+  },
+  {
+    imgURL: "/services/Thatch.png",
+    title: "Thatch",
+  },
+  {
+    imgURL: "/services/shades.png",
+    title: "Parking Shades",
+  },
+  {
+    imgURL: "/services/Panel_Roofing.png",
+    title: "Pannel Roofing",
+  },
+  {
+    imgURL: "/services/Pergolas.png",
+    title: "Pergolas",
+  },
+  {
+    imgURL: "/services/Canopy.png",
+    title: "Canopy",
+  },
   {
     imgURL: "/services/Bicycle_Rack.png",
     title: "Bicycle Rack Frames",
@@ -132,29 +156,62 @@ export const MetalServices = [
   },
 ]
 
-export const RoofingServices = [
+export const MajorProjects = [
   {
-    imgURL: "/services/Roof_tile.png",
-    title: "Roofing Clay Tiles & Accessories",
+    imgURL: "/projects/Saadiyat_Beach_Villas.png",
+    title: "Saadiyat Beach Villas",
   },
   {
-    imgURL: "/services/Thatch.png",
-    title: "Thatch",
+    imgURL: "/projects/Saadiyat_Beach_Apartments.png",
+    title: "Saadiyat Beach Apartments",
   },
   {
-    imgURL: "/services/shades.png",
-    title: "Parking Shades",
+    imgURL: "/projects/District_One.png",
+    title: "District One",
   },
   {
-    imgURL: "/services/Panel_Roofing.png",
-    title: "Pannel Roofing",
+    imgURL: "/projects/AbuDhabi_Royal_Palace.png",
+    title: "Abu Dhabi Royal Palace",
   },
   {
-    imgURL: "/services/Pergolas.png",
-    title: "Pergolas",
+    imgURL: "/projects/Palm_Jumeirah.png",
+    title: "Palm Jumeirah",
   },
   {
-    imgURL: "/services/Canopy.png",
-    title: "Canopy",
-  }
+    imgURL: "/projects/St_Regis_Resort.png",
+    title: "St. Regis Resort",
+  },
+  {
+    imgURL: "/projects/Bloom_Gardens.png",
+    title: "Bloom Gardens",
+  },
+  {
+    imgURL: "/projects/Najmat_Reem_Island.png",
+    title: "Najmat Reem Island",
+  },
+  {
+    imgURL: "/projects/Mirdif_Villas.png",
+    title: "Mirdif Villas P 101",
+  },
+  {
+    imgURL: "/projects/Buamim_Villa.png",
+    title: "D 183 –Buamim Villa, Nadal Sheba",
+  },
+  {
+    imgURL: "/projects/Jumeirah_Golf_Estate.png",
+    title: "Jumeirah Golf Estate",
+  },
+  {
+    imgURL: "/projects/Jumeirah_Park_Package.png",
+    title: "Jumeirah Park Package 3,4 & 5",
+  },
+  {
+    imgURL: "/projects/International_City.png",
+    title: "International City Phase 1",
+  },
+  {
+    imgURL: "/projects/Discover_gardens.png",
+    title: "Discover gardens",
+  },
+  
 ]

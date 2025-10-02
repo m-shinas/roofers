@@ -8,15 +8,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useState } from "react";
+import { MajorProjects } from "../lib/data";
 
 const ImageGallery = () => {
   const [selectedImg, setSelectedImg] = useState<number>(0);
   const [imgPop, setImgPop] = useState(false);
-
-  const projecs = Array.from(
-    { length: 14 },
-    (_, i) => `/recent_projects/project-${i + 1}.png`
-  );
 
   const swipeImg = (moveTyp: string) => {
     if (moveTyp === "prv") {
@@ -28,8 +24,8 @@ const ImageGallery = () => {
 
   return (
     <>
-      <div className="flex flex-wrap items-center justify-center gap-2 mt-10">
-        {projecs.map((image, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-10">
+        {MajorProjects.map((project, index) => (
           <div
             onClick={() => {
               setSelectedImg(index);
@@ -39,10 +35,10 @@ const ImageGallery = () => {
             className="cursor-pointer hover:scale-105 transition-all ease-linear"
           >
             <Image
-              className="w-full h-65 object-cover"
+              className="w-full h-65 object-cover rounded-xl"
               width={270}
               height={260}
-              src={image}
+              src={project.imgURL}
               alt={`Project ${index}`}
             />
           </div>
@@ -70,8 +66,8 @@ const ImageGallery = () => {
               className="w-full max-w-[650px] h-64 "
               width={300}
               height={260}
-              src={projecs[selectedImg]}
-              alt={`Project ${selectedImg}`}
+              src={MajorProjects[selectedImg].imgURL}
+              alt={MajorProjects[selectedImg].title}
             />
           </div>
           <div onClick={ () => swipeImg("nxt")}>
