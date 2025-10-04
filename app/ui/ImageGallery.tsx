@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useState } from "react";
 import { MajorProjects } from "../lib/data";
+import { mulish } from "./fonts";
 
 const ImageGallery = () => {
   const [selectedImg, setSelectedImg] = useState<number>(0);
@@ -32,15 +33,18 @@ const ImageGallery = () => {
               setImgPop(true);
             }}
             key={index}
-            className="cursor-pointer hover:scale-105 transition-all ease-linear"
+            className="relative group cursor-pointer hover:scale-105 transition-all ease-linear rounded-xl overflow-hidden"
           >
             <Image
-              className="w-full h-65 object-cover rounded-xl"
+              className="w-full h-65 object-cover"
               width={270}
               height={260}
               src={project.imgURL}
               alt={`Project ${index}`}
             />
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear absolute bottom-0 py-2 h-max w-full bg-gradient-to-t from-black to-transparent">
+              <h3 className={`${mulish.className} text-white text-lg text-center font-semibold`}>{project.title}</h3>
+            </div>
           </div>
         ))}
       </div>
