@@ -74,12 +74,12 @@ export default function Page() {
                 height={256}
                 src={service.imgURL}
                 alt={service.title}
-                className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105 group-active:scale-105"
               />
 
               {/* Inverted Corner Label */}
               <div
-                className={`${mulish.className} absolute bottom-0 right-0 bg-white group-hover:bg-tall-poppy-600  text-black group-hover:text-white transition duration-500 ease-in-out text-base font-semibold px-4 py-2 rounded-tl-[2rem]`}
+                className={`${mulish.className} absolute bottom-0 right-0 bg-white group-hover:bg-tall-poppy-600 group-active:bg-tall-poppy-600  text-black group-hover:text-white group-active:text-white transition duration-500 ease-in-out text-base font-semibold px-4 py-2 rounded-tl-[2rem]`}
               >
                 {service.title}
               </div>

@@ -36,14 +36,14 @@ const WhatsappBtn = () => {
         </Link>
       </span>
       <span
-        className={`fixed bottom-21 left-3 z-20 ${
+        className={`fixed bottom-19 md:bottom-21 left-3 z-20 ${
           showTooltip ? "block" : "hidden"
         } bg-tall-poppy-700 text-white text-xs sm:text-sm p-1 sm:p-2 whitespace-nowrap rounded-md shadow-lg`}
       >
         Chat us on Whatsapp
       </span>
       <span
-        className={`fixed bottom-[79px] left-6 z-20 ${
+        className={`fixed bottom-[71px] md:bottom-[79px] left-6 z-20 ${
           showTooltip ? "block" : "hidden"
         } border-[5px] border-l-transparent border-r-transparent border-b-0 border-t-tall-poppy-700`}
       ></span>
