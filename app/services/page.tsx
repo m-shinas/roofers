@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Banner from "../ui/Banner";
 import { mulish } from "../ui/fonts";
-import {Services} from "../lib/data";
+import { Services } from "../lib/data";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -42,34 +42,57 @@ export default function Page() {
       <Banner />
 
       <section className="relative py-8 max-w-7xl mx-auto px-4">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_2px,transparent_2px)] bg-[size:24px_34px]"></div>
-        <h2 className="my-8 text-center text-3xl sm:text-5xl font-bold">Our Services</h2>
+        <h2 className="my-8 text-center text-3xl sm:text-5xl font-bold">
+          Our Services
+        </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {Services.map((service) => (
+            // <div
+            //   key={service.title}
+            //   className="group relative hover:bg-tall-poppy-700  shadow-sm overflow-hidden bg-white hover:shadow-lg transition ease-in duration-300"
+            // >
+            //   <Image
+            //     width={300}
+            //     height={256}
+            //     src={service.imgURL}
+            //     alt={service.title}
+            //     className="h-64 w-full object-cover"
+            //   />
+            //   <div className="p-5">
+            //     <h3 className="font-semibold text-lg group-hover:text-white transition ease-in duration-300">
+            //       {service.title}
+            //     </h3>
+            //   </div>
+            // </div>
             <div
               key={service.title}
-              className="group hover:bg-tall-poppy-700 border shadow-sm overflow-hidden bg-white hover:shadow-lg transition ease-in duration-300"
+              className="relative group overflow-hidden rounded-2xl shadow-lg bg-slate-100 hover:shadow-xl transition"
             >
+              {/* Service Image */}
               <Image
                 width={300}
                 height={256}
                 src={service.imgURL}
                 alt={service.title}
-                className="h-64 w-full object-cover"
+                className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="p-5">
-                <h3 className="font-semibold text-lg group-hover:text-white transition ease-in duration-300">
-                  {service.title}
-                </h3>
+
+              {/* Inverted Corner Label */}
+              <div
+                className={`${mulish.className} absolute bottom-0 right-0 bg-white group-hover:bg-tall-poppy-600  text-black group-hover:text-white transition duration-500 ease-in-out text-base font-semibold px-4 py-2 rounded-tl-[2rem]`}
+              >
+                {service.title}
               </div>
+
             </div>
           ))}
         </div>
-        
       </section>
 
       <section id="products" className="padding">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-8">Products</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-8">
+          Products
+        </h2>
         <div className="max-sm:my-6 flex justify-center items-center flex-wrap gap-6">
           <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
             <div>

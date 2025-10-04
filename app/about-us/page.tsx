@@ -64,7 +64,7 @@ export default function page() {
         </div>
         <div className="flex-1 flex justify-center items-center">
           <Image
-            src="/our_story.avif"
+            src="/about_us-hero.jpg"
             width={584}
             height={594}
             alt="roofside"
@@ -74,9 +74,9 @@ export default function page() {
       </section>
 
       {/* Mission / Vision / Services Section */}
-      <section className="relative w-full h-[75vh] bg-[url('/roof-bg.JPG')] bg-no-repeat bg-cover bg-center flex justify-center items-center mb-20">
+      <section className="relative w-full h-[75vh] bg-[url('/roof-bg.JPG')] bg-no-repeat bg-cover bg-center flex justify-center items-center ">
         <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-white/30 to-white/10"></div>
-        <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-3 absolute md:bottom-[-60] z-10">
+        <div className="max-w-7xl mx-auto px-4 grid gap-6 md:grid-cols-3 z-10">
           {/* Card 1 */}
           <div className="rounded-2xl bg-regent-gray-400 text-regent-gray-950 p-4 sm:p-8 shadow-lg flex ">
             <div className="mr-4">
