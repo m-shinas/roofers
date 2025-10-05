@@ -29,38 +29,9 @@ const ValueCard = ({ icon, title, description }: ValueCardProps) => {
 };
 
 const AboutUsPage = () => {
-  // const leaders = [
-  //   {
-  //     name: "John Doe",
-  //     position: "CEO & Founder",
-  //     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
-  //   },
-  //   {
-  //     name: "Jane Smith",
-  //     position: "Chief Operations Officer",
-  //     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
-  //   },
-  //   {
-  //     name: "Michael Chen",
-  //     position: "Technical Director",
-  //     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
-  //   }
-  // ];
-
-  const stats = [
-    { number: "24+", label: "Years of Excellence" },
-    { number: "500+", label: "Projects Completed" },
-    { number: "3", label: "Workshop Locations" },
-    { number: "5", label: "Partner Countries" }
-  ];
-
   return (
     <div className="min-h-screen bg-zinc-50">
-      {/* Hero Banner */}
       <Banner/>
-      
-
-      {/* Our Story Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -95,7 +66,6 @@ const AboutUsPage = () => {
         </div>
       </section>
 
-      {/* Mission, Vision, Values */}
       <section className="bg-zinc-900 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
@@ -123,7 +93,6 @@ const AboutUsPage = () => {
         </div>
       </section>
 
-      {/* Our Capabilities */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-4">
@@ -151,7 +120,6 @@ const AboutUsPage = () => {
         </div>
       </section>
 
-      {/* Leaders Section */}
       <section className="bg-gradient-to-b from-zinc-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -173,7 +141,6 @@ const AboutUsPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
      <section className="relative bg-white py-20 mb-10">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-red-700 text-shadow-lg  mb-6">
