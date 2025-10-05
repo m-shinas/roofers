@@ -45,6 +45,10 @@ export default function Page() {
         <h2 className="my-8 text-center text-3xl sm:text-5xl font-bold">
           Our Services
         </h2>
+        <p className="mb-8 text-lg text-zinc-600 text-center max-w-2xl mx-auto">
+          We provide complete roofing, steel, and aluminium fabrication
+          solutions tailored for commercial, industrial, and residential needs.
+        </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {Services.map((service) => (
             // <div
@@ -83,7 +87,6 @@ export default function Page() {
               >
                 {service.title}
               </div>
-
             </div>
           ))}
         </div>
