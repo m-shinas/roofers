@@ -24,13 +24,13 @@ const ProfileCard = ({
           className="w-full h-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
         />
       </div>
-      <div className="absolute bottom-[-3] w-full flex flex-col justify-between items-center px-4 py-2 shadow-md bg-white rounded-[15px] transition-colors duration-500 ease-in-out ">
+      <div className="absolute bottom-[-3] w-full px-4 py-2 shadow-md bg-white rounded-[15px] transition-colors duration-500 ease-in-out ">
         <h2
-          className={`  text-regent-gray-950 text-xl leading-snug font-semibold`}
+          className={` text-2xl font-bold text-zinc-900`}
         >
           {name}
         </h2>
-        <h3 className={`${mulish.className} text-regent-gray-950`}>{title}</h3>
+        <h3 className={`${mulish.className} text-red-600 font-semibold`}>{title}</h3>
         {/* <h4 className={`${mulish.className} text-regent-gray-950`}>{mob}</h4>
         <h5 className={`${mulish.className} text-regent-gray-950`}>{email}</h5> */}
       </div>
