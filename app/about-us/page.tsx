@@ -133,7 +133,7 @@ const AboutUsPage = () => {
               Experienced professionals driving our success
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid place-items-center md:grid-cols-3 gap-8">
             {leaders.map((leader) => (
               <ProfileCard key={leader.name} {...leader}/>
             ))}
