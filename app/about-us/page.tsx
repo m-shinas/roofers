@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Eye, Shield, Users, Factory, Award } from 'lucide-react';
+import { Target, Eye, Shield, Factory, Award } from 'lucide-react';
 import Banner from '../ui/Banner';
 import Image from 'next/image';
 import { leaders } from '../lib/data';
@@ -74,20 +74,20 @@ const AboutUsPage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <ValueCard 
               icon={<Target className="w-8 h-8" />}
-              title="&quot;Our Mission&quot;"
-              description="&quot;Building with precision and passion — delivering durable, high-quality roofing and metal solutions on time.&quot;"
+              title="Our Mission"
+              description="Building with precision and passion — delivering durable, high-quality roofing and metal solutions on time."
             />
             
             <ValueCard 
               icon={<Eye className="w-8 h-8" />}
-              title="&quot;Our Vision&quot;"
-              description="&quot;To shape skylines with innovation, craftsmanship, and lasting value for generations to come.&quot;"
+              title="Our Vision"
+              description="To shape skylines with innovation, craftsmanship, and lasting value for generations to come."
             />
             
             <ValueCard 
               icon={<Shield className="w-8 h-8" />}
-              title="&quot;Core Values&quot;"
-              description="&quot;Guided by integrity, driven by innovation, committed to quality, safety, and on-time delivery.&quot;"
+              title="Core Values"
+              description="Guided by integrity, driven by innovation, committed to quality, safety, and on-time delivery."
             />
           </div>
         </div>
@@ -134,7 +134,7 @@ const AboutUsPage = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {leaders.map((leader, index) => (
+            {leaders.map((leader) => (
               <ProfileCard key={leader.name} {...leader}/>
             ))}
           </div>
@@ -147,7 +147,7 @@ const AboutUsPage = () => {
             Ready to Build Your Vision?
           </h2>
           <p className="text-xl text-zinc-300 mb-8">
-            Let's discuss how we can bring excellence to your next project
+            Let&apos;s discuss how we can bring excellence to your next project
           </p>
           <Link className="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-xl"
           href={'/contact'}>
