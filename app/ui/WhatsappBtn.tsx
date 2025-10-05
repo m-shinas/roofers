@@ -16,7 +16,7 @@ const WhatsappBtn = () => {
         <span className="absolute -top-0.5 -right-0.5 inline-flex size-3 rounded-full bg-tall-poppy-600"></span>
 
         <Link
-          href="https://api.whatsapp.com/send?phone"
+          href="https://api.whatsapp.com/send?phone=971551594244"
           target="_blank"
           className="flex justify-center items-center bg-[#25d366] rounded-sm md:rounded-lg w-9 h-9 md:w-12 md:h-12"
         >

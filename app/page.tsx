@@ -114,7 +114,7 @@ export default function Home() {
             </p>
             <div className="mt-11 text-right">
               <Link
-                className="text-white py-3.5 px-6 bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 rounded-4xl hover:rounded-lg focus-visible:rounded-lg transition-[border-radius] duration-400 ease shadow-lg"
+                className="text-white py-3.5 px-6 bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 rounded-4xl hover:rounded-lg active:rounded-lg transition-[border-radius] duration-400 ease shadow-lg"
                 href="/about-us"
               >
                 Read About Us

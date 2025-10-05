@@ -38,7 +38,7 @@ const AboutUsPage = () => {
               Our Story
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6">
-              Trusted Leaders in UAE Construction
+              Trusted Leader in UAE
             </h2>
             <div className="space-y-4 text-zinc-700 leading-relaxed">
               <p>
@@ -171,7 +171,7 @@ const AboutUsPage = () => {
             Let&apos;s discuss how we can bring excellence to your next project
           </p>
           <Link
-            className="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-xl"
+            className="bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 text-white px-10 py-4 rounded-4xl hover:rounded-lg text-lg font-semibold transition-[border-radius] duration-400 ease shadow-xl"
             href={"/contact"}
           >
             Get In Touch
