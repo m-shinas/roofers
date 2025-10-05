@@ -74,20 +74,20 @@ const AboutUsPage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <ValueCard 
               icon={<Target className="w-8 h-8" />}
-              title="Our Mission"
-              description="Building with precision and passion — delivering durable, high-quality roofing and metal solutions on time."
+              title="&quot;Our Mission&quot;"
+              description="&quot;Building with precision and passion — delivering durable, high-quality roofing and metal solutions on time.&quot;"
             />
             
             <ValueCard 
               icon={<Eye className="w-8 h-8" />}
-              title="Our Vision"
-              description="To shape skylines with innovation, craftsmanship, and lasting value for generations to come."
+              title="&quot;Our Vision&quot;"
+              description="&quot;To shape skylines with innovation, craftsmanship, and lasting value for generations to come.&quot;"
             />
             
             <ValueCard 
               icon={<Shield className="w-8 h-8" />}
-              title="Core Values"
-              description="Guided by integrity, driven by innovation, committed to quality, safety, and on-time delivery."
+              title="&quot;Core Values&quot;"
+              description="&quot;Guided by integrity, driven by innovation, committed to quality, safety, and on-time delivery.&quot;"
             />
           </div>
         </div>
