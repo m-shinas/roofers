@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Hero from "./ui/Hero";
-// import Background from "./ui/Background";
 import Image from "next/image";
 import { mulish } from "./ui/fonts";
 import Link from "next/link";
@@ -37,7 +36,6 @@ const settings = {
 };
 
 export default function Home() {
-  // const [heroCount, setHeroCount] = useState(0);
   const [counterOn, setCounterOn] = useState(false);
   const scrollPosition = () => {
     if (window.scrollY >= 680) {
@@ -82,7 +80,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      {/* <Background heroCount={heroCount}/> */}
+  
       <section className="padding">
         <div className="flex justify-between items-center max-xl:flex-col-reverse gap-10">
           <div className=" max-w-[700px] max-h-[600px]">
@@ -116,7 +114,7 @@ export default function Home() {
             </p>
             <div className="mt-11 text-right">
               <Link
-                className="text-white py-3.5 px-6 bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 rounded-4xl hover:rounded-lg transition-[border-radius] duration-400 ease shadow-lg cursor-pointer"
+                className="text-white py-3.5 px-6 bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 rounded-4xl hover:rounded-lg focus-visible:rounded-lg transition-[border-radius] duration-400 ease shadow-lg"
                 href="/about-us"
               >
                 Read About Us
@@ -396,7 +394,7 @@ export default function Home() {
             <div className="mt-8 text-right">
               <Link
                 href="/services"
-                className=" px-6 py-3 text-white bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 rounded-4xl hover:rounded-lg transition-[border-radius] duration-400 ease shadow-lg"
+                className=" px-6 py-3 text-white bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 rounded-4xl hover:rounded-lg focus-visible:rounded-lg transition-[border-radius] duration-400 ease shadow-lg"
               >
                 Explore All Services
               </Link>
@@ -443,7 +441,7 @@ export default function Home() {
           <div className=" sm:w-[300px] sm:min-w-[260px] w-[230px] h-[223px] relative overflow-hidden group">
             <Image
               src="/TGO.png"
-              alt="cargo"
+              alt="roof tile"
               width={260}
               height={213}
               className="w-full h-full hover:drop-shadow-lg hover:drop-shadow-tall-poppy-700 rounded-xl"
@@ -459,7 +457,7 @@ export default function Home() {
           <div className=" sm:w-[300px] sm:min-w-[260px] w-[230px] h-[223px]  relative overflow-hidden group">
             <Image
               src="/Thatch_single.png"
-              alt="cargo"
+              alt="thatch"
               width={260}
               height={213}
               className="w-full h-full object-cover hover:drop-shadow-lg hover:drop-shadow-tall-poppy-700 rounded-xl"
@@ -480,7 +478,7 @@ export default function Home() {
           >
             See Product Catalogues{" "}
             <FontAwesomeIcon
-              className="group-hover:translate-x-1 transition duration-300 ease-linear"
+              className="group-hover:translate-x-1 transition duration-150 ease-linear"
               icon={faArrowRight}
             />
           </Link>

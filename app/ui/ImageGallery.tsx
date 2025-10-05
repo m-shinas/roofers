@@ -42,7 +42,7 @@ const ImageGallery = () => {
               src={project.imgURL}
               alt={`Project ${index}`}
             />
-            <div className="opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 ease-linear absolute bottom-0 py-2 h-max w-full bg-gradient-to-t from-black to-transparent">
+            <div className="absolute bottom-0 py-2 h-max w-full bg-gradient-to-t from-black to-transparent">
               <h3 className={`${mulish.className} text-white text-lg text-center font-semibold`}>{project.title}</h3>
             </div>
           </div>
