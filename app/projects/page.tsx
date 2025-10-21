@@ -3,6 +3,7 @@ import Banner from "../ui/Banner";
 import ClientLogoScroll from "../ui/ClientLogoScroll";
 import SupplierLogoScroll from "../ui/SupplierLogoScroll";
 import ImageGallery from "../ui/ImageGallery";
+import { MajorProjects, recentProjects } from "../lib/data";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -53,7 +54,13 @@ export default function page() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">
             Major Projects
           </h2>
-          <ImageGallery />
+          <ImageGallery projects={MajorProjects} />
+        </div>
+        <div className="container mx-auto mt-8 px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">
+            Recent Projects
+          </h2>
+          <ImageGallery projects={recentProjects} />
         </div>
       </section>
 

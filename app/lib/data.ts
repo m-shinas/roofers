@@ -25,59 +25,53 @@ export const leaders = [
 export const testimonials = [
   {
     imgURL: "/mohamed_al_farsi.jpg",
-    name: "Mohamed Al Farsi",
-    title: "Operations Head",
+    name: "Eng. Saeed Al Mansoori",
+    title: "Senior Engineer",
     wordings:
-      "Roofers Group exceeded our expectations on our commercial warehouse project. Their steel fabrication quality is top-notch.",
+      "Good team to work with. They finished the job on time and did everything properly.",
   },
   {
-    imgURL: "/sarah_thomas.jpg",
-    name: "Sarah Thomas",
-    title: "Senior Architect",
+    imgURL: "/sebastian.jpg",
+    name: "Sebastian",
+    title: "Project Coordinator",
     wordings:
-      "We value their professionalism and ability to deliver complex roofing works on schedule. Highly recommended.",
+      "It’s been a good experience working with Roofers. They’re honest and easy to deal with.",
   },
   {
     imgURL: "/ravi_menon.jpg",
-    name: "Ravi Menon",
-    title: "Project Manager",
+    name: "Sudeesh Narayanan",
+    title: "Site Engineer",
     wordings:
-      "Their aluminium facade work gave our building a premium finish. Great craftsmanship and detailing.",
+      "The fabrication work was done nicely and without delay. The workers know their job well.",
   },
-  {
-    imgURL: "/fatima_al_suwaidi.jpg",
-    name: "Fatima Al Suwaidi",
-    title: "Civil Engineer",
-    wordings:
-      "Their commitment to safety, planning and quality makes them our go-to partner for structural steel works.",
-  },
+  
   {
     imgURL: "/hassan_al_marri.jpg",
-    name: "Hassan Al Marri",
-    title: "Managing Director",
+    name: "Hassan Raza",
+    title: "Procurement Manager",
     wordings:
-      "Excellent client coordination, transparent costing, and impressive on-site execution. A reliable partner.",
+      "Roofers has been consistent with their work. Quality and delivery are always good, and communication is easy.",
   },
   {
     imgURL: "/arun_nair.jpg",
-    name: "Arun Nair",
-    title: "Industrial Planner",
+    name: "John Mathew",
+    title: "Procurement Officer",
     wordings:
-      "They provided full design, supply and erection support for our factory sheds. Delivered flawlessly.",
+      "We’ve been working with Roofers for a while now. They’re reliable and always respond quickly when needed.",
   },
   {
     imgURL: "/laura_bennett.jpg",
-    name: "Laura Bennett",
-    title: "Design Director",
+    name: "Maria Fernandes",
+    title: "Villa Owner",
     wordings:
-      "The team’s knowledge of international roofing products helped us achieve an iconic design on our resort.",
+      "Roofers supplied the clay tiles for my villa. The tiles looked great and the team was very helpful during the work.",
   },
   {
     imgURL: "/ahmed_khalifa.jpg",
-    name: "Ahmed Khalifa",
-    title: "Senior Consultant",
+    name: "Ahmed Khalid",
+    title: "Project Manager",
     wordings:
-      "From tender to handover, their project discipline and workmanship were exceptional. Would work with them again.",
+      "We’ve done a few projects with Roofers, and they’ve always done a good job. The materials came on time, and the team was easy to deal with.",
   },
 ];
 
@@ -96,7 +90,7 @@ export const Services = [
   },
   {
     imgURL: "/services/Panel_Roofing.png",
-    title: "Pannel Roofing",
+    title: "Panel Roofing",
   },
   {
     imgURL: "/services/Pergolas.png",
@@ -140,7 +134,7 @@ export const Services = [
   },
   {
     imgURL: "/services/Steel_Aluminum_Stairs.png",
-    title: "Steel and Aluminum Stairs",
+    title: "Steel and Aluminium Stairs",
   },
   {
     imgURL: "/services/Steel_Structural_Frames.png",
@@ -167,7 +161,7 @@ export const MajorProjects = [
   },
   {
     imgURL: "/projects/District_One.png",
-    title: "District One",
+    title: "MBR - District One",
   },
   {
     imgURL: "/projects/AbuDhabi_Royal_Palace.png",
@@ -215,3 +209,39 @@ export const MajorProjects = [
   },
   
 ]
+
+export const recentProjects = [
+  {
+    imgURL: "/recent_projects/project-1.jpg",
+    title: "Project 1",
+  },
+  {
+    imgURL: "/recent_projects/project-2.jpg",
+    title: "Project 2",
+  },
+  {
+    imgURL: "/recent_projects/project-3.jpg",
+    title: "Project 3",
+  },
+  {
+    imgURL: "/recent_projects/project-4.jpg",
+    title: "Project 4",
+  },
+  {
+    imgURL: "/recent_projects/project-5.jpg",
+    title: "Project 5",
+  },
+  {
+    imgURL: "/recent_projects/project-6.jpg",
+    title: "Project 6",
+  },
+  {
+    imgURL: "/recent_projects/project-7.jpg",
+    title: "Project 7",
+  },
+  {
+    imgURL: "/recent_projects/project-8.jpg",
+    title: "Project 8",
+  },
+]
+  

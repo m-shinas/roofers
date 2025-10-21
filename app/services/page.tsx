@@ -201,7 +201,7 @@ export default function Page() {
 
             <div className="mt-4 flex gap-2 justify-end">
               <Link
-                href=""
+                href="https://drive.google.com/file/d/1XRt5jKDGIv2AvpuFhY5b9YyRbRuhANEL/view"
                 target="_blank"
                 className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
               >
@@ -211,7 +211,7 @@ export default function Page() {
                 </span>
               </Link>
               <Link
-                href=""
+                href="https://drive.usercontent.google.com/uc?id=1XRt5jKDGIv2AvpuFhY5b9YyRbRuhANEL&export=download"
                 target="_blank"
                 className={`${mulish.className} border p-2 border-regent-gray-950 rounded-lg group-hover:bg-white`}
               >

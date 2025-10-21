@@ -8,25 +8,31 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useState } from "react";
-import { MajorProjects } from "../lib/data";
 import { mulish } from "./fonts";
 
-const ImageGallery = () => {
+const ImageGallery = ({
+  projects,
+}: {
+  projects: {
+    imgURL: string;
+    title: string;
+  }[];
+}) => {
   const [selectedImg, setSelectedImg] = useState<number>(0);
   const [imgPop, setImgPop] = useState(false);
 
   const swipeImg = (moveTyp: string) => {
     if (moveTyp === "prv") {
-      setSelectedImg((prev) => (prev === 0 ? 13 : prev - 1));
+      setSelectedImg((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
     } else if (moveTyp === "nxt") {
-      setSelectedImg((prev) => (prev === 13 ? 0 : prev + 1));
+      setSelectedImg((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
     }
-  }
+  };
 
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-10">
-        {MajorProjects.map((project, index) => (
+        {projects.map((project, index) => (
           <div
             onClick={() => {
               setSelectedImg(index);
@@ -42,23 +48,36 @@ const ImageGallery = () => {
               src={project.imgURL}
               alt={`Project ${index}`}
             />
-            <div className="absolute bottom-0 py-2 h-max w-full bg-gradient-to-t from-black to-transparent">
-              <h3 className={`${mulish.className} text-white text-lg text-center font-semibold`}>{project.title}</h3>
-            </div>
+            {projects.length === 14 && (
+              <div className="absolute bottom-0 py-2 h-max w-full bg-gradient-to-t from-black to-transparent">
+                <h3
+                  className={`${mulish.className} text-white text-lg text-center font-semibold`}
+                >
+                  {project.title}
+                </h3>
+              </div>
+            )}
           </div>
         ))}
       </div>
 
       {imgPop && (
-        <div onKeyDown={(event) => { if (event.key === "Escape"){setImgPop(false)} }} className="fixed top-0 left-0 bottom-0 right-0 bg-black/75 flex items-center justify-center gap-8 z-50">
-          <div  onClick={() => setImgPop(false)}>
+        <div
+          onKeyDown={(event) => {
+            if (event.key === "Escape") {
+              setImgPop(false);
+            }
+          }}
+          className="fixed top-0 left-0 bottom-0 right-0 bg-black/75 flex items-center justify-center gap-8 z-50"
+        >
+          <div onClick={() => setImgPop(false)}>
             <FontAwesomeIcon
               icon={faClose}
               className="text-white absolute top-10 right-10 cursor-pointer"
               size="xl"
             />{" "}
           </div>
-          <div onClick={ () => swipeImg("prv")}>
+          <div onClick={() => swipeImg("prv")}>
             <FontAwesomeIcon
               icon={faChevronLeft}
               className="text-white cursor-pointer ml-2 hover:translate-x-2 transition-all ease-linear"
@@ -70,11 +89,11 @@ const ImageGallery = () => {
               className="w-full max-w-[650px] h-64 "
               width={300}
               height={260}
-              src={MajorProjects[selectedImg].imgURL}
-              alt={MajorProjects[selectedImg].title}
+              src={projects[selectedImg].imgURL}
+              alt={projects[selectedImg].title}
             />
           </div>
-          <div onClick={ () => swipeImg("nxt")}>
+          <div onClick={() => swipeImg("nxt")}>
             <FontAwesomeIcon
               icon={faChevronRight}
               className="text-white cursor-pointer mr-2 hover:-translate-x-2 transition-all ease-linear"

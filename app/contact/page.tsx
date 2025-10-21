@@ -92,7 +92,7 @@ export default function page() {
 
           <div className="p-10 max-md:p-7.5  bg-regent-gray-300 text-regent-gray-950 rounded-2xl shadow-md">
             <h3 className="mb-5 text-2xl font-bold">
-              Roofers Technical Service LLC (Headquarters)
+              Roofers (Headquarters)
             </h3>
             <div className={`${mulish.className}`}>
               <div className="flex items-center mb-2.5">
