@@ -243,5 +243,61 @@ export const recentProjects = [
     imgURL: "/recent_projects/project-8.jpg",
     title: "Project 8",
   },
+  {
+    imgURL: "/recent_projects/project-9.png",
+    title: "Project 9",
+  },
+  {
+    imgURL: "/recent_projects/project-10.png",
+    title: "Project 10",
+  },
+  {
+    imgURL: "/recent_projects/project-11.png",
+    title: "Project 11",
+  },
+  {
+    imgURL: "/recent_projects/project-12.png",
+    title: "Project 12",
+  },
+  {
+    imgURL: "/recent_projects/project-13.png",
+    title: "Project 13",
+  },
+  {
+    imgURL: "/recent_projects/project-14.png",
+    title: "Project 14",
+  },
+  {
+    imgURL: "/recent_projects/project-15.png",
+    title: "Project 15",
+  },
+  {
+    imgURL: "/recent_projects/project-16.png",
+    title: "Project 16",
+  },
+  {
+    imgURL: "/recent_projects/project-17.png",
+    title: "Project 17",
+  },
+  {
+    imgURL: "/recent_projects/project-18.png",
+    title: "Project 18",
+  },
+  {
+    imgURL: "/recent_projects/project-19.png",
+    title: "Project 19",
+  },
+  {
+    imgURL: "/recent_projects/project-20.png",
+    title: "Project 20",
+  },
+  {
+    imgURL: "/recent_projects/project-21.png",
+    title: "Project 21",
+  },
+  {
+    imgURL: "/recent_projects/project-22.png",
+    title: "Project 22",
+  },
 ]
   
