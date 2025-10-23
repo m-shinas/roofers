@@ -438,15 +438,15 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12 flex max-sm:flex-wrap justify-center items-center gap-16">
-          <div className=" sm:w-[300px] sm:min-w-[260px] w-[230px] h-[223px] relative overflow-hidden group">
+          <div className="sm:w-[380px] sm:min-w-[340px] w-[270px] h-[263px] flex items-center justify-center bg-[url('/red_scribble.png')] bg-cover bg-center relative overflow-hidden group">
             <Image
               src="/TGO.png"
               alt="roof tile"
               width={260}
               height={213}
-              className="w-full h-full hover:drop-shadow-lg hover:drop-shadow-tall-poppy-700 rounded-xl"
+              className=" hover:drop-shadow-lg hover:drop-shadow-gray-700  rounded-xl"
             />
-            <div className="text-tall-poppy-700 absolute top-10 left-5 px-4 bg-white/30 backdrop-blur-none rounded-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+            <div className="text-white absolute top-10 left-5 px-4 bg-black/50 backdrop-blur-none rounded-full">
               <h3
                 className={` ${mulish.className}  text-2xl leading-snug font-semibold`}
               >
@@ -454,15 +454,15 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className=" sm:w-[300px] sm:min-w-[260px] w-[230px] h-[223px]  relative overflow-hidden group">
+          <div className="sm:w-[380px] sm:min-w-[340px] w-[270px] h-[263px] flex items-center justify-center bg-[url('/red_scribble.png')] bg-cover bg-center relative overflow-hidden group">
             <Image
               src="/Thatch_single.png"
               alt="thatch"
               width={260}
               height={213}
-              className="w-full h-full object-cover hover:drop-shadow-lg hover:drop-shadow-tall-poppy-700 rounded-xl"
+              className="hover:drop-shadow-lg hover:drop-shadow-gray-700 rounded-xl"
             />
-            <div className="text-tall-poppy-700 absolute top-10 left-10 px-4 bg-white/30 backdrop-blur-none rounded-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+            <div className="text-white absolute top-10 left-10 px-4 bg-black/50 backdrop-blur-none rounded-full">
               <h3
                 className={` ${mulish.className}  text-2xl leading-snug font-semibold`}
               >
