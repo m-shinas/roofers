@@ -97,7 +97,7 @@ export default function Page() {
           Products
         </h2>
         <div className="max-sm:my-6 flex justify-center items-center flex-wrap gap-6">
-          <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
+          <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-tall-poppy-600 transition duration-500 ease-in-out border border-regent-gray-400">
             <div>
               <Image
                 src="/LaEscandella-2025.png"
@@ -140,7 +140,7 @@ export default function Page() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
+          <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-tall-poppy-600 transition duration-500 ease-in-out border border-regent-gray-400">
             <div>
               <Image
                 src="/ICP_Cat_tile.png"
@@ -183,7 +183,7 @@ export default function Page() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-regent-gray-400 transition duration-500 ease-in-out border border-regent-gray-400">
+          <div className="flex flex-col justify-between group rounded-xl p-4 hover:bg-tall-poppy-600 transition duration-500 ease-in-out border border-regent-gray-400">
             <div>
               <Image
                 src="/Thatch_Roof.png"

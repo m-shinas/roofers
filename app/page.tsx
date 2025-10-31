@@ -6,7 +6,7 @@ import Image from "next/image";
 import { mulish } from "./ui/fonts";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faHouse } from "@fortawesome/free-regular-svg-icons";
+import { faClock } from "@fortawesome/free-regular-svg-icons";
 import CountUp from "react-countup";
 import TestimonyCard from "./ui/TestimonyCard";
 import { testimonials } from "./lib/data";
@@ -14,6 +14,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { School } from "lucide-react";
 
 const settings = {
   dots: false,
@@ -80,7 +81,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-  
+
       <section className="padding">
         <div className="flex justify-between items-center max-xl:flex-col-reverse gap-10">
           <div className=" max-w-[700px] max-h-[600px]">
@@ -384,7 +385,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-4">
                 <div className="h-14 w-14 flex items-center justify-center rounded-full border-2 border-tall-poppy-700 font-bold">
-                  <FontAwesomeIcon icon={faHouse} size="2xl" color="#b32024" />
+                  <School color="#b32024" size={40} strokeWidth={1.2} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">Residential</h3>
@@ -438,37 +439,37 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12 flex max-sm:flex-wrap justify-center items-center gap-16">
-          <div className="sm:w-[380px] sm:min-w-[340px] w-[270px] h-[263px] flex items-center justify-center bg-[url('/red_scribble.png')] bg-cover bg-center relative overflow-hidden group">
+          <div className="sm:w-[320px] sm:min-w-[280px] w-[260px] h-[253px] rounded-2xl shadow-lg border border-zinc-300 bg-regent-gray-200 flex flex-col justify-between relative overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="w-max text-white p-2 pr-8 my-4 bg-tall-poppy-700 relative z-20 ">
+              <h3 className={`italic text-xl leading-snug`}>Roof Tiles</h3>
+              <span
+                className={`absolute top-0 right-0 z-20 border-[22px] border-t-transparent border-b-transparent border-l-0 border-r-regent-gray-200`}
+              ></span>
+            </div>
+
             <Image
-              src="/TGO.png"
+              src="/3 Tiles.png"
               alt="roof tile"
               width={260}
               height={213}
-              className=" hover:drop-shadow-lg hover:drop-shadow-gray-700  rounded-xl"
+              className="absolute top-20 -right-5 -rotate-45 drop-shadow-xl drop-shadow-black/50"
             />
-            <div className="text-white absolute top-10 left-5 px-4 bg-black/50 backdrop-blur-none rounded-full">
-              <h3
-                className={` ${mulish.className}  text-2xl leading-snug font-semibold`}
-              >
-                Roof tile
-              </h3>
-            </div>
           </div>
-          <div className="sm:w-[380px] sm:min-w-[340px] w-[270px] h-[263px] flex items-center justify-center bg-[url('/red_scribble.png')] bg-cover bg-center relative overflow-hidden group">
-            <Image
-              src="/Thatch_single.png"
-              alt="thatch"
-              width={260}
-              height={213}
-              className="hover:drop-shadow-lg hover:drop-shadow-gray-700 rounded-xl"
-            />
-            <div className="text-white absolute top-10 left-10 px-4 bg-black/50 backdrop-blur-none rounded-full">
-              <h3
-                className={` ${mulish.className}  text-2xl leading-snug font-semibold`}
-              >
-                Thatch
-              </h3>
+          <div className="sm:w-[320px] sm:min-w-[280px] w-[260px] h-[253px] rounded-2xl shadow-lg border border-zinc-300 bg-regent-gray-200 flex flex-col justify-between relative overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="w-max text-white p-2 pr-8 my-4 bg-tall-poppy-700 relative z-20 ">
+              <h3 className={`italic text-xl leading-snug`}>Thatch</h3>
+              <span
+                className={`absolute top-0 right-0 z-20 border-[22px] border-t-transparent border-b-transparent border-l-0 border-r-regent-gray-200`}
+              ></span>
             </div>
+
+            <Image
+              src="/Thatch_trans.png"
+              alt="roof tile"
+              width={220}
+              height={200}
+              className="max-h-[200px] max-w-[220px] absolute bottom-0 right-0 drop-shadow-xl drop-shadow-black/50"
+            />
           </div>
         </div>
         <div className="mt-6 text-right">
