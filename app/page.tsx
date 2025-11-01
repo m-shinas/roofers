@@ -6,7 +6,6 @@ import Image from "next/image";
 import { mulish } from "./ui/fonts";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-regular-svg-icons";
 import CountUp from "react-countup";
 import TestimonyCard from "./ui/TestimonyCard";
 import { testimonials } from "./lib/data";
@@ -84,13 +83,13 @@ export default function Home() {
 
       <section className="padding">
         <div className="flex justify-between items-center max-xl:flex-col-reverse gap-10">
-          <div className=" max-w-[700px] max-h-[600px]">
+          <div className="max-w-[700px] max-h-[600px]">
             <Image
               src="/hero_sec.tif"
               alt="Roof work"
               width={773}
               height={687}
-              className="object-center w-full rounded-2xl"
+              className="object-center w-full rounded-2xl z-10"
             />
           </div>
           <div className="flex flex-col">
@@ -141,7 +140,7 @@ export default function Home() {
               <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
-                    end={174}
+                    end={560}
                     duration={3}
                     separator=","
                     start={0}
@@ -182,7 +181,7 @@ export default function Home() {
               <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
-                    end={8}
+                    end={18}
                     duration={5}
                     separator=","
                     start={0}
@@ -196,16 +195,27 @@ export default function Home() {
             </div>
           </div>
           <div className="flex max-md:flex-col items-center justify-center">
-            <FontAwesomeIcon
-              icon={faClock}
-              className="text-tall-poppy-700"
-              size="2xl"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="34"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#b32024"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              
+            >
+              <path d="M12 6v6l4 2" />
+              <path d="M22 12a10 10 0 1 0-11 9.95" />
+              <path d="m22 16-5.5 5.5L14 19" />
+            </svg>
             <div className="md:pl-4 pt-4 md:ml-3 mt-3 max-md:border-t-1 md:border-l-1 ">
               <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
-                    end={1900000}
+                    end={3250000}
                     duration={5}
                     separator=","
                     start={0}
@@ -236,7 +246,7 @@ export default function Home() {
               <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
-                    end={500000}
+                    end={750000}
                     duration={5}
                     separator=","
                     start={0}
@@ -465,7 +475,7 @@ export default function Home() {
 
             <Image
               src="/Thatch_trans.png"
-              alt="roof tile"
+              alt="Thatch roof"
               width={220}
               height={200}
               className="max-h-[200px] max-w-[220px] absolute bottom-0 right-0 drop-shadow-xl drop-shadow-black/50"
