@@ -141,7 +141,7 @@ export default function Home() {
               <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
-                    end={174}
+                    end={560}
                     duration={3}
                     separator=","
                     start={0}
@@ -182,7 +182,7 @@ export default function Home() {
               <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
-                    end={8}
+                    end={18}
                     duration={5}
                     separator=","
                     start={0}
@@ -205,7 +205,7 @@ export default function Home() {
               <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
-                    end={1900000}
+                    end={3250000}
                     duration={5}
                     separator=","
                     start={0}
@@ -236,7 +236,7 @@ export default function Home() {
               <h1 className="text-5xl text-tall-poppy-700">
                 {counterOn && (
                   <CountUp
-                    end={500000}
+                    end={750000}
                     duration={5}
                     separator=","
                     start={0}
