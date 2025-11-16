@@ -22,7 +22,7 @@ export async function sendMail(formData: FormData) {
     const mailOptions = {
       from: formData.email,
       to: process.env.SMTP_USERNAME,
-      subject: formData.subject,
+      subject: "Roofers Contact Us",
       text: '',
       html: `
         <h3>Name- <span style="color: blue;">${formData.name}</span></h3> 

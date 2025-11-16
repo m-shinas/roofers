@@ -71,19 +71,6 @@ function ContactForm() {
                         </div>
                     </div>
 
-                    <div className="row50 max-md:flex-col max-md:gap-0 flex gap-5">
-                        <div className="inputBox flex flex-col w-full mb-2.5">
-                            <span className="mt-2.5 mb-1 font-medium">Subject</span>
-                            <input
-                                type="text"
-                                className="p-2.5 outline-0 border border-regent-gray-300 rounded-lg"
-                                placeholder="Enter Subject"
-                                {...register('subject')}
-                            />
-                            {errors.subject && <span className="text-red-400">{errors.subject.message}</span>}
-                        </div>
-                    </div>
-
                     <div className="row100">
                         <div className="inputBox w-full flex flex-col mb-2.5">
                             <span className="mt-2.5 mb-1 font-medium">Message</span>
