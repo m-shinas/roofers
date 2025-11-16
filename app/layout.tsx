@@ -7,6 +7,7 @@ import Footer from "./ui/Footer";
 import ScrollToTop from "./ui/scrollToTop";
 import Navbar from "./ui/Navbar";
 import WhatsappBtn from "./ui/WhatsappBtn";
+import {Toaster} from "react-hot-toast";
 
 config.autoAddCss = false
 
@@ -54,6 +55,7 @@ export default function RootLayout({
         <WhatsappBtn />
         <ScrollToTop />
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

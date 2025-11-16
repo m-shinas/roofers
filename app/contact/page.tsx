@@ -1,3 +1,4 @@
+
 import {
   faEnvelope,
   faLocationDot,
@@ -8,6 +9,7 @@ import Link from "next/link";
 import { mulish } from "../ui/fonts";
 import Banner from "../ui/Banner";
 import { Metadata } from "next";
+import ContactForm from "../ui/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact us",
@@ -19,6 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
+
   return (
     <main className="">
       <Banner />
@@ -31,64 +34,9 @@ export default function page() {
           For business enquiries, project discussions, or to learn more about
           our services, Feel free to contact us.
         </p>
-       
+
         <div className="relative grid max-md:grid-cols-1 max-md:grid-rows-[3auto] grid-cols-[2fr_1fr] grid-rows-[1fr_1fr] gap-5 my-5">
-          <div className="p-10 max-md:p-7.5 border text-regent-gray-950 border-regent-gray-400 row-start-1 row-end-3 rounded-2xl shadow-md">
-            <h3 className="mb-5 text-2xl font-bold">Drop Your Message</h3>
-            <form>
-              <div className={`${mulish.className} formBox relative w-full`}>
-                <div className="row50 max-md:flex-col max-md:gap-0 flex gap-5">
-                  <div className="inputBox flex flex-col w-full mb-2.5">
-                    <span className="mt-2.5 mb-1 font-medium">Name</span>
-                    <input
-                      type="text"
-                      className="p-2.5 outline-0 border border-regent-gray-300 rounded-lg"
-                      placeholder="Enter your Full name"
-                    />
-                  </div>
-                </div>
-
-                <div className="row50 max-md:flex-col max-md:gap-0 flex gap-5">
-                  <div className="inputBox flex flex-col w-[50%] max-md:w-full mb-2.5">
-                    <span className="mt-2.5 mb-1 font-medium">Email</span>
-                    <input
-                      type="email"
-                      className="p-2.5 outline-0 border border-regent-gray-300 rounded-lg"
-                      placeholder="Enter your email address"
-                    />
-                  </div>
-                  <div className="inputBox flex flex-col w-[50%] max-md:w-full mb-2.5">
-                    <span className="mt-2.5 mb-1 font-medium">Mobile</span>
-                    <input
-                      type="text"
-                      className="p-2.5 outline-0 border border-regent-gray-300 rounded-lg"
-                      placeholder="Enter your Mobile number"
-                    />
-                  </div>
-                </div>
-
-                <div className="row100">
-                  <div className="inputBox w-full flex flex-col mb-2.5">
-                    <span className="mt-2.5 mb-1 font-medium">Message</span>
-                    <textarea
-                      className="p-2.5 border border-regent-gray-300 outline-0 resize-none min-h-60 mb-2.5 rounded-lg"
-                      placeholder="Write your message here..."
-                    ></textarea>
-                  </div>
-                </div>
-
-                <div className="row100">
-                  <div className="inputBox w-full flex flex-col mb-2.5">
-                    <input
-                      type="submit"
-                      value="Send"
-                      className="bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 border-0 text-white text-[1.1em] cursor-pointer py-3.5 px-4 max-w-30 font-medium rounded-4xl hover:rounded-lg transition-[border-radius] duration-400 ease"
-                    />
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
+          <ContactForm />
 
           <div className="p-10 max-md:p-7.5  bg-regent-gray-300 text-regent-gray-950 rounded-2xl shadow-md">
             <h3 className="mb-5 text-2xl font-bold">
@@ -142,43 +90,43 @@ export default function page() {
         <div
           className={`text-left grid max-md:grid-cols-1 max-md:grid-rows-3 grid-cols-3 gap-5 mx-0 py-8 px-8 max-md:px-4 border border-regent-gray-400 rounded-2xl shadow-md`}
         >
-          
-            <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
-              <h3 className="mt-3 text-xl leading-normal font-bold">
-                Roofers Steel And Aluminium L.L.C
-              </h3>
-              <p
-                className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
-              >
-                Abu Dhabi, United Arab Emirates <br />
-                Tel: <Link href="tel:+97122367617">+971 2 236 7617</Link>
-              </p>
-            </div>
 
-            <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
-              <h3 className="mt-3 text-xl leading-normal font-bold">
-                Roofers Aluminium And Steel Company
-              </h3>
-              <p
-                className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
-              >
-                Ajman, United Arab Emirates
-                <br /> Tel: <Link href="tel:+97144580127">+971 4 458 0127</Link>
-              </p>
-            </div>
-
-            <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
-              <h3 className="mt-3 text-xl leading-normal font-bold">
-                Roofers International
-              </h3>
-              <p
-                className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
-              >
-                Italy
-                <br /> Tel: <Link href="tel:+390423920777">+39 0423 920 777</Link>
-              </p>
-            </div>
+          <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
+            <h3 className="mt-3 text-xl leading-normal font-bold">
+              Roofers Steel And Aluminium L.L.C
+            </h3>
+            <p
+              className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
+            >
+              Abu Dhabi, United Arab Emirates <br />
+              Tel: <Link href="tel:+97122367617">+971 2 236 7617</Link>
+            </p>
           </div>
+
+          <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
+            <h3 className="mt-3 text-xl leading-normal font-bold">
+              Roofers Aluminium And Steel Company
+            </h3>
+            <p
+              className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
+            >
+              Ajman, United Arab Emirates
+            <br /> Tel: <Link href="tel:+97144580127">+971 4 458 0127</Link>
+            </p>
+          </div>
+
+          <div className="w-full rounded-[20px] shadow-sm px-6 py-16 bg-regent-gray-300">
+            <h3 className="mt-3 text-xl leading-normal font-bold">
+              Roofers International
+            </h3>
+            <p
+              className={`${mulish.className} text-regent-gray-800 text-lg leading-normal mt-3`}
+            >
+              Italy
+              <br /> Tel: <Link href="tel:+390423920777">+39 0423 920 777</Link>
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );
