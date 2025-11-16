@@ -37,49 +37,58 @@ function ContactForm() {
                 <div className={`${mulish.className} formBox relative w-full`}>
                     <div className="row50 max-md:flex-col max-md:gap-0 flex gap-5">
                         <div className="inputBox flex flex-col w-full mb-2.5">
-                            <span className="mt-2.5 mb-1 font-medium">Name</span>
+                            <div className="flex justify-between mt-2.5 mb-1 font-medium">
+                                <span>Name</span>
+                                {errors.name && <span className="text-red-400">{errors.name.message}</span>}
+                            </div>
                             <input
                                 type="text"
                                 className="p-2.5 outline-0 border border-regent-gray-300 rounded-lg"
                                 placeholder="Enter your Full name"
                                 {...register('name')}
                             />
-                            {errors.name && <span className="text-red-400">{errors.name.message}</span>}
                         </div>
                     </div>
 
                     <div className="row50 max-md:flex-col max-md:gap-0 flex gap-5">
                         <div className="inputBox flex flex-col w-[50%] max-md:w-full mb-2.5">
-                            <span className="mt-2.5 mb-1 font-medium">Email</span>
+                            <div className="flex justify-between mt-2.5 mb-1 font-medium">
+                                <span>Email</span>
+                                {errors.email && <span className="text-red-400">{errors.email.message}</span>}
+                            </div>
                             <input
                                 type="email"
                                 className="p-2.5 outline-0 border border-regent-gray-300 rounded-lg"
                                 placeholder="Enter your email address"
                                 {...register('email')}
                             />
-                            {errors.email && <span className="text-red-400">{errors.email.message}</span>}
                         </div>
                         <div className="inputBox flex flex-col w-[50%] max-md:w-full mb-2.5">
-                            <span className="mt-2.5 mb-1 font-medium">Mobile</span>
+                            <div className="flex justify-between mt-2.5 mb-1 font-medium">
+                                <span>Mobile</span>
+                                {errors.mobile && <span className="text-red-400">{errors.mobile.message}</span>}    
+                            </div>
                             <input
                                 type="number"
                                 className="p-2.5 outline-0 border border-regent-gray-300 rounded-lg"
                                 placeholder="Enter your Mobile number"
                                 {...register('mobile')}
                             />
-                            {errors.mobile && <span className="text-red-400">{errors.mobile.message}</span>}
                         </div>
                     </div>
 
                     <div className="row100">
                         <div className="inputBox w-full flex flex-col mb-2.5">
-                            <span className="mt-2.5 mb-1 font-medium">Message</span>
+                            <div className="flex justify-between mt-2.5 mb-1 font-medium">
+                                <span>Message</span>
+                                {errors.message && <span className="text-red-400">{errors.message.message}</span>}
+                            </div>
+                            
                             <textarea
                                 className="p-2.5 border border-regent-gray-300 outline-0 resize-none min-h-60 mb-2.5 rounded-lg"
                                 placeholder="Write your message here..."
                                 {...register('message')}
                             ></textarea>
-                            {errors.message && <span className="text-red-400">{errors.message.message}</span>}
                         </div>
                     </div>
 
@@ -88,7 +97,7 @@ function ContactForm() {
                             <button
                                 type="submit"
                                 inert= {isSubmitting}
-                                className="bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700 border-0 text-white text-[1.1em] cursor-pointer py-3.5 px-4 max-w-30 font-medium rounded-4xl hover:rounded-lg transition-[border-radius] duration-400 ease"
+                                className={`${isSubmitting ? 'bg-tall-poppy-400' : 'bg-gradient-to-r from-tall-poppy-600 to-tall-poppy-700'} border-0 text-white text-[1.1em] cursor-pointer py-3.5 px-4 max-w-30 font-medium rounded-4xl hover:rounded-lg transition-[border-radius] duration-400 ease`}
                             > {isSubmitting ? "Sending" : "Send"}
                             </button>
                         </div>
