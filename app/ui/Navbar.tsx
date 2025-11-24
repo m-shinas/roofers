@@ -59,7 +59,7 @@ function Navbar() {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="hover:text-gray-400 transition-colors"
+                  className={`${ pathname === link.href ? "text-tall-poppy-700" : "" } hover:text-gray-400  transition-colors`}
                 >
                   {link.name}
                 </Link>

@@ -9,9 +9,13 @@ import {
   faSquareFacebook,
   faSquareLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+
   const presentYear: number = new Date().getFullYear();
+  const pathname = usePathname();
+
   return (
     <footer className="w-full bg-gradient-to-r from-gray-700 to-gray-900 text-white rounded-t-[60px] pt-[100px] pb-[30px]">
       <div className="w-[85%] m-auto flex flex-wrap items-start justify-between ">
@@ -27,9 +31,6 @@ const Footer = () => {
           <p className={`${mulish.className} text-base mt-4`}>
             Exotic Roofing Solution From Europe
           </p>
-          {/* <p className={`italic text-base text-tall-poppy-700`}>
-            &quot;Celebrating 25 years of excellence&quot;
-          </p> */}
         </div>
         <div className="footer-col">
           <h3 className="w-fit mb-8 relative text-2xl leading-normal font-medium ">
@@ -58,7 +59,7 @@ const Footer = () => {
             <li className="mb-3">
               <Link
                 href="/"
-                className={`${mulish.className}  text-regent-gray-600 hover:text-tall-poppy-700`}
+                className={`${mulish.className}  ${pathname === "/" ? "text-white underline underline-offset-2" : "text-regent-gray-600"} hover:text-tall-poppy-700`}
               >
                 Home
               </Link>
@@ -66,7 +67,7 @@ const Footer = () => {
             <li className="my-3">
               <Link
                 href="/about-us"
-                className={`${mulish.className} text-regent-gray-600 hover:text-tall-poppy-700`}
+                className={`${mulish.className} ${pathname === "/about-us" ? "text-white underline underline-offset-2" : "text-regent-gray-600"} hover:text-tall-poppy-700`}
               >
                 About Us
               </Link>
@@ -74,7 +75,7 @@ const Footer = () => {
             <li className="my-3">
               <Link
                 href="/services"
-                className={`${mulish.className} text-regent-gray-600 hover:text-tall-poppy-700`}
+                className={`${mulish.className} ${pathname === "/services" ? "text-white underline underline-offset-2" : "text-regent-gray-600"} hover:text-tall-poppy-700`}
               >
                 Services
               </Link>
@@ -82,7 +83,7 @@ const Footer = () => {
             <li className="my-3">
               <Link
                 href="/projects"
-                className={`${mulish.className} text-regent-gray-600 hover:text-tall-poppy-700`}
+                className={`${mulish.className} ${pathname === "/projects" ? "text-white underline underline-offset-2" : "text-regent-gray-600"} hover:text-tall-poppy-700`}
               >
                 Projects
               </Link>
@@ -90,7 +91,7 @@ const Footer = () => {
             <li className="my-3">
               <Link
                 href="/contact"
-                className={`${mulish.className} text-regent-gray-600 hover:text-tall-poppy-700`}
+                className={`${mulish.className} ${pathname === "/contact" ? "text-white underline underline-offset-2" : "text-regent-gray-600"}  hover:text-tall-poppy-700`}
               >
                 Contact Us
               </Link>
