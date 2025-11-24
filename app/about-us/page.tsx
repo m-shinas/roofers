@@ -5,7 +5,16 @@ import Image from "next/image";
 import { leaders } from "../lib/data";
 import ProfileCard from "../ui/ProfileCard";
 import Link from "next/link";
-import { mulish } from "../ui/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About us",
+  description: "Roofers is a leading provider of roofing services in the UAE, specializing in design, supply, installation, and supervision of timber and Steel and clay roofing products with accessories.",
+  keywords: ["About us", "Vision", "Mission", "Values", "Company Profile", "Leaders"],
+  alternates: {
+    canonical: "/about-us",
+  }
+}
 
 type ValueCardProps = {
   icon: React.ReactNode;

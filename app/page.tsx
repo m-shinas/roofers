@@ -202,9 +202,9 @@ export default function Home() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#b32024"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               
             >
               <path d="M12 6v6l4 2" />

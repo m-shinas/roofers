@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s - Roofers',
     default: 'Roofers - Roofing | Steel | Aluminium Solutions',
   },
-  metadataBase: new URL('https://www.roofersfzc.com'),
+  metadataBase: new URL('https://www.roofersfzc.ae'),
   robots: {
     index: true,
     follow: true,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'en': 'https://www.roofersfzc.com',
+      'en': 'https://www.roofersfzc.ae',
     }
   }
 };
