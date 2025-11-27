@@ -117,9 +117,9 @@ const Footer = () => {
             <a>
               <FontAwesomeIcon icon={faSquareLinkedin} size="lg" />
             </a>
-            <a>
+            <Link href="https://www.instagram.com/roofers_group/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
